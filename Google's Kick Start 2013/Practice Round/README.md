@@ -12,14 +12,14 @@ The first line of the input gives the number of test cases, T. T test cases
 follow. Each test case starts with a positive integer M on a line by itself --
 the number of troublesome pairs of League members. The next M lines each contain
 a pair of names, separated by a single space.
-
 ##Output
+
 For each test case, output one line containing "Case #x: y", where x is the case
 number (starting from 1) and y is either "Yes" or "No", depending on whether the
 League members mentioned in the input can be split into two groups with neither
 of the groups containing a troublesome pair.
-
 ##Limits
+
 1 ≤ T ≤ 100.
 Each member name will consist of only letters and the underscore character.
 Names are case-sensitive.
