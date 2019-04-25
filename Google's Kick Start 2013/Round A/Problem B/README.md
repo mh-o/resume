@@ -4,10 +4,10 @@ and right childs of node p/q are p/(p+q) and (p+q)/q, respectively. This tree
 looks like:
 
 ```
-1/1
-______|______
-|           |
-1/2         2/1
+        1/1
+   ______|______
+   |           |
+  1/2         2/1
 ___|___     ___|___
 |     |     |     |
 1/3   3/2   2/3   3/1
