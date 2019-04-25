@@ -19,7 +19,6 @@ public class BadHorse {
    * Main program.
    */
   public static void main(String[] args) {
-    // To read input.
     in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
     members = new ArrayList<Member>();
 
