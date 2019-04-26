@@ -8,10 +8,17 @@
 import java.util.*;
 import java.io.*;
 
+/*
+ * Class for the Reational Number Tree problem from round A of Google's 2013
+ * Kick Start coding challenge.
+ */
 public class RationalNumberTree {
   static Scanner in;
   static int[] frac = { 0, 1 };
 
+  /*
+   * Main program.
+   */
   public static void main(String[] args) {
     in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
 
@@ -27,6 +34,13 @@ public class RationalNumberTree {
     }
   }
 
+  /*
+   * Method for a single test case. Splits a line into the problem type, and
+   * either N, or p and q.
+   *
+   * @param String of line of infile
+   * @return String of correct output
+   */
   private static String testCase(String str) {
     String[] split = str.split(" ");
     String res = "";
@@ -50,7 +64,11 @@ public class RationalNumberTree {
   }
 
 /*
- * Method to
+ * Method to find the Nth element of the array representing the perfect binary
+ * tree.
+ *
+ * @param int n
+ * @param int[] element of n in the tree
  */
   private static int[] findNthElement(int n) {
     if (n > 0) {
@@ -62,6 +80,15 @@ public class RationalNumberTree {
     return frac;
   }
 
+  /*
+   * Method to find the position of some p/q elements within the array
+   * representing the perfect binary tree. Finds the depth of the element and
+   * uses this to find the depth to calculat the position in the array.
+   *
+   * @param int p
+   * @param int q
+   * @ return int position
+   */
   private static int findPosition(int p, int q) {
     int depth = getDepth(p, q);
     int breadth = getBreadth(p, q, depth);
@@ -102,6 +129,17 @@ public class RationalNumberTree {
     return depth;
   }
 
+  /*
+   * Method to get the breadth of pai p/q using depth in the complete binary
+   * tree. Traverse the tree upwards until we get to the root, keeping track
+   * of every time we shift left in the tree, as well as the total shifts
+   * relative to the bottom leaves depending on the depth.
+   *
+   * @param int p
+   * @param int q
+   * @param int depth
+   * @return int breadth
+   */
   private static int getBreadth(int p, int q, int depth) {
     int breadth = 0;
     double x = p;
