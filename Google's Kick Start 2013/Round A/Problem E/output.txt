@@ -1,0 +1,10 @@
+Room 1: gl
+Room 2: t3
+Room 3: t3
+Turbolift 0: 1 to 2 in 217 seconds
+Turbolift 1: 3 to 2 in 567 seconds
+Turbolift 2: 1 to 1 in 21 seconds
+hi
+Soldier 1: p: 2, q: 1
+hi
+Soldier 2: p: 2, q: 3
