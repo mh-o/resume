@@ -1,0 +1,359 @@
+--- ALGORITHM: opt, TRACEFILE: gcc.trace, FRAMES: 4 ----
+
+Algorithm: OPT
+Number of frames: 4
+Total memory accesses: 515683
+Total page faults: 38215
+Total writes to disk: 12322
+
+--- ALGORITHM: opt, TRACEFILE: gcc.trace, FRAMES: 8 ----
+
+Algorithm: OPT
+Number of frames: 8
+Total memory accesses: 515683
+Total page faults: 13328
+Total writes to disk: 4382
+
+--- ALGORITHM: opt, TRACEFILE: gcc.trace, FRAMES: 16 ----
+
+Algorithm: OPT
+Number of frames: 16
+Total memory accesses: 515683
+Total page faults: 3020
+Total writes to disk: 1022
+
+--- ALGORITHM: opt, TRACEFILE: gcc.trace, FRAMES: 32 ----
+
+Algorithm: OPT
+Number of frames: 32
+Total memory accesses: 515683
+Total page faults: 491
+Total writes to disk: 228
+
+--- ALGORITHM: opt, TRACEFILE: gcc.trace, FRAMES: 64 ----
+
+Algorithm: OPT
+Number of frames: 64
+Total memory accesses: 515683
+Total page faults: 318
+Total writes to disk: 149
+
+--- ALGORITHM: opt, TRACEFILE: swim.trace, FRAMES: 4 ----
+
+Algorithm: OPT
+Number of frames: 4
+Total memory accesses: 303193
+Total page faults: 17082
+Total writes to disk: 8053
+
+--- ALGORITHM: opt, TRACEFILE: swim.trace, FRAMES: 8 ----
+
+Algorithm: OPT
+Number of frames: 8
+Total memory accesses: 303193
+Total page faults: 4417
+Total writes to disk: 2184
+
+--- ALGORITHM: opt, TRACEFILE: swim.trace, FRAMES: 16 ----
+
+Algorithm: OPT
+Number of frames: 16
+Total memory accesses: 303193
+Total page faults: 358
+Total writes to disk: 157
+
+--- ALGORITHM: opt, TRACEFILE: swim.trace, FRAMES: 32 ----
+
+Algorithm: OPT
+Number of frames: 32
+Total memory accesses: 303193
+Total page faults: 144
+Total writes to disk: 73
+
+--- ALGORITHM: opt, TRACEFILE: swim.trace, FRAMES: 64 ----
+
+Algorithm: OPT
+Number of frames: 64
+Total memory accesses: 303193
+Total page faults: 135
+Total writes to disk: 71
+
+--- ALGORITHM: opt, TRACEFILE: gzip.trace, FRAMES: 4 ----
+
+Algorithm: OPT
+Number of frames: 4
+Total memory accesses: 481044
+Total page faults: 40014
+Total writes to disk: 39919
+
+--- ALGORITHM: opt, TRACEFILE: gzip.trace, FRAMES: 8 ----
+
+Algorithm: OPT
+Number of frames: 8
+Total memory accesses: 481044
+Total page faults: 39874
+Total writes to disk: 39845
+
+--- ALGORITHM: opt, TRACEFILE: gzip.trace, FRAMES: 16 ----
+
+Algorithm: OPT
+Number of frames: 16
+Total memory accesses: 481044
+Total page faults: 39856
+Total writes to disk: 39830
+
+--- ALGORITHM: opt, TRACEFILE: gzip.trace, FRAMES: 32 ----
+
+Algorithm: OPT
+Number of frames: 32
+Total memory accesses: 481044
+Total page faults: 39856
+Total writes to disk: 39824
+
+--- ALGORITHM: opt, TRACEFILE: gzip.trace, FRAMES: 64 ----
+
+Algorithm: OPT
+Number of frames: 64
+Total memory accesses: 481044
+Total page faults: 39856
+Total writes to disk: 39792
+
+--- ALGORITHM: fifo, TRACEFILE: gcc.trace, FRAMES: 4 ----
+
+Algorithm: FIFO
+Number of frames: 4
+Total memory accesses: 515683
+Total page faults: 69158
+Total writes to disk: 28175
+
+--- ALGORITHM: fifo, TRACEFILE: gcc.trace, FRAMES: 8 ----
+
+Algorithm: FIFO
+Number of frames: 8
+Total memory accesses: 515683
+Total page faults: 29011
+Total writes to disk: 11519
+
+--- ALGORITHM: fifo, TRACEFILE: gcc.trace, FRAMES: 16 ----
+
+Algorithm: FIFO
+Number of frames: 16
+Total memory accesses: 515683
+Total page faults: 8568
+Total writes to disk: 3542
+
+--- ALGORITHM: fifo, TRACEFILE: gcc.trace, FRAMES: 32 ----
+
+Algorithm: FIFO
+Number of frames: 32
+Total memory accesses: 515683
+Total page faults: 1375
+Total writes to disk: 660
+
+--- ALGORITHM: fifo, TRACEFILE: gcc.trace, FRAMES: 64 ----
+
+Algorithm: FIFO
+Number of frames: 64
+Total memory accesses: 515683
+Total page faults: 551
+Total writes to disk: 258
+
+--- ALGORITHM: fifo, TRACEFILE: swim.trace, FRAMES: 4 ----
+
+Algorithm: FIFO
+Number of frames: 4
+Total memory accesses: 303193
+Total page faults: 32310
+Total writes to disk: 17396
+
+--- ALGORITHM: fifo, TRACEFILE: swim.trace, FRAMES: 8 ----
+
+Algorithm: FIFO
+Number of frames: 8
+Total memory accesses: 303193
+Total page faults: 13893
+Total writes to disk: 8499
+
+--- ALGORITHM: fifo, TRACEFILE: swim.trace, FRAMES: 16 ----
+
+Algorithm: FIFO
+Number of frames: 16
+Total memory accesses: 303193
+Total page faults: 844
+Total writes to disk: 470
+
+--- ALGORITHM: fifo, TRACEFILE: swim.trace, FRAMES: 32 ----
+
+Algorithm: FIFO
+Number of frames: 32
+Total memory accesses: 303193
+Total page faults: 326
+Total writes to disk: 158
+
+--- ALGORITHM: fifo, TRACEFILE: swim.trace, FRAMES: 64 ----
+
+Algorithm: FIFO
+Number of frames: 64
+Total memory accesses: 303193
+Total page faults: 177
+Total writes to disk: 69
+
+--- ALGORITHM: fifo, TRACEFILE: gzip.trace, FRAMES: 4 ----
+
+Algorithm: FIFO
+Number of frames: 4
+Total memory accesses: 481044
+Total page faults: 50132
+Total writes to disk: 40028
+
+--- ALGORITHM: fifo, TRACEFILE: gzip.trace, FRAMES: 8 ----
+
+Algorithm: FIFO
+Number of frames: 8
+Total memory accesses: 481044
+Total page faults: 44918
+Total writes to disk: 39894
+
+--- ALGORITHM: fifo, TRACEFILE: gzip.trace, FRAMES: 16 ----
+
+Algorithm: FIFO
+Number of frames: 16
+Total memory accesses: 481044
+Total page faults: 42384
+Total writes to disk: 39856
+
+--- ALGORITHM: fifo, TRACEFILE: gzip.trace, FRAMES: 32 ----
+
+Algorithm: FIFO
+Number of frames: 32
+Total memory accesses: 481044
+Total page faults: 41120
+Total writes to disk: 39825
+
+--- ALGORITHM: fifo, TRACEFILE: gzip.trace, FRAMES: 64 ----
+
+Algorithm: FIFO
+Number of frames: 64
+Total memory accesses: 481044
+Total page faults: 40496
+Total writes to disk: 39793
+
+--- ALGORITHM: aging, TRACEFILE: gcc.trace, FRAMES: 4 ----
+
+Algorithm: AGING
+Number of frames: 4
+Total memory accesses: 515683
+Total page faults: 57067
+Total writes to disk: 14971
+
+--- ALGORITHM: aging, TRACEFILE: gcc.trace, FRAMES: 8 ----
+
+Algorithm: AGING
+Number of frames: 8
+Total memory accesses: 515683
+Total page faults: 24146
+Total writes to disk: 6226
+
+--- ALGORITHM: aging, TRACEFILE: gcc.trace, FRAMES: 16 ----
+
+Algorithm: AGING
+Number of frames: 16
+Total memory accesses: 515683
+Total page faults: 8976
+Total writes to disk: 1610
+
+--- ALGORITHM: aging, TRACEFILE: gcc.trace, FRAMES: 32 ----
+
+Algorithm: AGING
+Number of frames: 32
+Total memory accesses: 515683
+Total page faults: 6707
+Total writes to disk: 968
+
+--- ALGORITHM: aging, TRACEFILE: gcc.trace, FRAMES: 64 ----
+
+Algorithm: AGING
+Number of frames: 64
+Total memory accesses: 515683
+Total page faults: 2641
+Total writes to disk: 239
+
+--- ALGORITHM: aging, TRACEFILE: swim.trace, FRAMES: 4 ----
+
+Algorithm: AGING
+Number of frames: 4
+Total memory accesses: 303193
+Total page faults: 26515
+Total writes to disk: 11654
+
+--- ALGORITHM: aging, TRACEFILE: swim.trace, FRAMES: 8 ----
+
+Algorithm: AGING
+Number of frames: 8
+Total memory accesses: 303193
+Total page faults: 9108
+Total writes to disk: 3986
+
+--- ALGORITHM: aging, TRACEFILE: swim.trace, FRAMES: 16 ----
+
+Algorithm: AGING
+Number of frames: 16
+Total memory accesses: 303193
+Total page faults: 818
+Total writes to disk: 259
+
+--- ALGORITHM: aging, TRACEFILE: swim.trace, FRAMES: 32 ----
+
+Algorithm: AGING
+Number of frames: 32
+Total memory accesses: 303193
+Total page faults: 691
+Total writes to disk: 195
+
+--- ALGORITHM: aging, TRACEFILE: swim.trace, FRAMES: 64 ----
+
+Algorithm: AGING
+Number of frames: 64
+Total memory accesses: 303193
+Total page faults: 370
+Total writes to disk: 41
+
+--- ALGORITHM: aging, TRACEFILE: gzip.trace, FRAMES: 4 ----
+
+Algorithm: AGING
+Number of frames: 4
+Total memory accesses: 481044
+Total page faults: 40155
+Total writes to disk: 39967
+
+--- ALGORITHM: aging, TRACEFILE: gzip.trace, FRAMES: 8 ----
+
+Algorithm: AGING
+Number of frames: 8
+Total memory accesses: 481044
+Total page faults: 39913
+Total writes to disk: 39862
+
+--- ALGORITHM: aging, TRACEFILE: gzip.trace, FRAMES: 16 ----
+
+Algorithm: AGING
+Number of frames: 16
+Total memory accesses: 481044
+Total page faults: 39887
+Total writes to disk: 39839
+
+--- ALGORITHM: aging, TRACEFILE: gzip.trace, FRAMES: 32 ----
+
+Algorithm: AGING
+Number of frames: 32
+Total memory accesses: 481044
+Total page faults: 39875
+Total writes to disk: 39820
+
+--- ALGORITHM: aging, TRACEFILE: gzip.trace, FRAMES: 64 ----
+
+Algorithm: AGING
+Number of frames: 64
+Total memory accesses: 481044
+Total page faults: 39875
+Total writes to disk: 39788

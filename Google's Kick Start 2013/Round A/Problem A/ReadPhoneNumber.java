@@ -14,7 +14,6 @@
  */
  public class ReadPhoneNumber {
    static Scanner in;
-
    static String[] digits = {"zero", "one", "two", "three", "four",
                              "five", "six", "seven", "eight", "nine"};
 
