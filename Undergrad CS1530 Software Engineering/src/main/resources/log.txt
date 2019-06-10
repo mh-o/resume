@@ -1,0 +1,268 @@
+================================================================================
+================================================================================
+GAME STARTED - Sat Jul 14 18:07:02 EDT 2018
+
+PLAYER NAME:
+	Matt Duing
+
+AI PLAYERS:
+	Lucas Robinson, Alexander Williams, Adalyn Davis, Carter Johnson, Logan Jones, Madelyn Harris, Grayson Harris
+
+CARDS DEALT: 
+	Matt Duing: --> Card@7e6f74c Card@dd05255
+	Lucas Robinson: --> Card@6a78afa0 Card@2f4948e4
+	Alexander Williams: --> Card@1f2586d6 Card@10683d9d
+	Adalyn Davis: --> Card@3fc2959f Card@5aa9e4eb
+	Carter Johnson: --> Card@6989da5e Card@385c9627
+	Logan Jones: --> Card@139982de Card@682b2fa
+	Madelyn Harris: --> Card@217ed35e Card@7dcf94f8
+	Grayson Harris: --> Card@229f66ed Card@31190526
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+Matt Duing's best hand:
+	One Pair
+
+Madelyn Harris's best hand:
+	One Pair
+
+Grayson Harris's best hand:
+	One Pair
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+Matt Duing's best hand:
+	One Pair
+
+Alexander Williams's best hand:
+	Flush
+
+Madelyn Harris's best hand:
+	One Pair
+
+Grayson Harris's best hand:
+	One Pair
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+Matt Duing's best hand:
+	One Pair
+
+Alexander Williams's best hand:
+	Flush
+
+Logan Jones's best hand:
+	One Pair
+
+Madelyn Harris's best hand:
+	One Pair
+
+Grayson Harris's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Sat Jul 14 18:14:11 EDT 2018
+
+PLAYER NAME:
+	Matt Duing
+
+AI PLAYERS:
+	Benjamin Johnson
+
+CARDS DEALT: 
+	Matt Duing: --> Card@78691363 Card@41d477ed
+	Benjamin Johnson: --> Card@3590fc5b Card@397fbdb
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+Matt Duing's best hand:
+	One Pair
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+Matt Duing's best hand:
+	One Pair
+
+Benjamin Johnson's best hand:
+	One Pair
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+Matt Duing's best hand:
+	One Pair
+
+Benjamin Johnson's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Sat Jul 14 18:53:05 EDT 2018
+
+PLAYER NAME:
+	Matt Duing
+
+AI PLAYERS:
+	Lily Davis
+
+CARDS DEALT: 
+	Matt Duing: --> Card@78691363 Card@41d477ed
+	Lily Davis: --> Card@3590fc5b Card@397fbdb
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+Matt Duing's best hand:
+	One Pair
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+Matt Duing's best hand:
+	One Pair
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+Matt Duing's best hand:
+	Three of a Kind
+
+Lily Davis's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Sat Jul 14 19:12:55 EDT 2018
+
+PLAYER NAME:
+	tim james
+
+AI PLAYERS:
+	Noah Smith, Aria Garcia, Riley Brown, Amelia Robinson, Aria Miller, Harper Johnson, Zoe Anderson
+
+CARDS DEALT: 
+	tim james: --> Card@7e6f74c Card@dd05255
+	Noah Smith: --> Card@6a78afa0 Card@2f4948e4
+	Aria Garcia: --> Card@1f2586d6 Card@10683d9d
+	Riley Brown: --> Card@3fc2959f Card@5aa9e4eb
+	Amelia Robinson: --> Card@6989da5e Card@385c9627
+	Aria Miller: --> Card@139982de Card@682b2fa
+	Harper Johnson: --> Card@217ed35e Card@7dcf94f8
+	Zoe Anderson: --> Card@229f66ed Card@31190526
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+tim james's best hand:
+	One Pair
+
+Amelia Robinson's best hand:
+	One Pair
+
+Zoe Anderson's best hand:
+	One Pair
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+tim james's best hand:
+	Three of a Kind
+
+Noah Smith's best hand:
+	One Pair
+
+Aria Garcia's best hand:
+	One Pair
+
+Riley Brown's best hand:
+	One Pair
+
+Amelia Robinson's best hand:
+	Two Pair
+
+Aria Miller's best hand:
+	One Pair
+
+Harper Johnson's best hand:
+	One Pair
+
+Zoe Anderson's best hand:
+	Two Pair
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+tim james's best hand:
+	Three of a Kind
+
+Noah Smith's best hand:
+	One Pair
+
+Aria Garcia's best hand:
+	One Pair
+
+Riley Brown's best hand:
+	One Pair
+
+Amelia Robinson's best hand:
+	Two Pair
+
+Aria Miller's best hand:
+	One Pair
+
+Harper Johnson's best hand:
+	One Pair
+
+Zoe Anderson's best hand:
+	Two Pair
+================================================================================
+================================================================================
+GAME STARTED - Sat Jul 14 19:37:24 EDT 2018
+
+PLAYER NAME:
+	matt duing
+
+AI PLAYERS:
+	Carter Harris, Harper Davis, Alexander Brown, Madison Miller, Adalyn Robinson, Jacob Taylor, Aria Wilson
+
+CARDS DEALT: 
+	matt duing: --> Card@6a78afa0 Card@2f4948e4
+	Carter Harris: --> Card@1f2586d6 Card@10683d9d
+	Harper Davis: --> Card@3fc2959f Card@5aa9e4eb
+	Alexander Brown: --> Card@6989da5e Card@385c9627
+	Madison Miller: --> Card@139982de Card@682b2fa
+	Adalyn Robinson: --> Card@217ed35e Card@7dcf94f8
+	Jacob Taylor: --> Card@229f66ed Card@31190526
+	Aria Wilson: --> Card@662ac478 Card@6743e411
+
+Harper Davis's best hand:
+	One Pair
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+matt duing's best hand:
+	One Pair
+
+Carter Harris's best hand:
+	One Pair
+
+Harper Davis's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	One Pair
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+matt duing's best hand:
+	One Pair
+
+Carter Harris's best hand:
+	One Pair
+
+Harper Davis's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	One Pair
+
+Adalyn Robinson's best hand:
+	One Pair
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+matt duing's best hand:
+	One Pair
+
+Carter Harris's best hand:
+	One Pair
+
+Harper Davis's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	One Pair
+
+Adalyn Robinson's best hand:
+	One Pair

@@ -1,0 +1,1687 @@
+================================================================================
+================================================================================
+GAME STARTED - Thu Jul 19 10:54:15 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Harper Martinez, Riley Martin, Aubrey Jackson, Ava Wilson, Harper Martinez, Chloe Thomas, Caden Martinez
+
+CARDS DEALT: 
+	Mike: --> QC 5C
+	Harper Martinez: --> 7C AC
+	Riley Martin: --> 10H QH
+	Aubrey Jackson: --> 5H AS
+	Ava Wilson: --> JS 2S
+	Harper Martinez: --> 7S 7D
+	Chloe Thomas: --> 10S KD
+	Caden Martinez: --> 8S JC
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: QC
+
+Harper Martinez's best hand:
+	High Card: AC
+
+Riley Martin's best hand:
+	High Card: QH
+
+Aubrey Jackson's best hand:
+	High Card: AS
+
+Ava Wilson's best hand:
+	High Card: JS
+
+Harper Martinez's best hand:
+	One Pair
+
+Chloe Thomas's best hand:
+	High Card: KD
+
+Caden Martinez's best hand:
+	High Card: JC
+Mike called
+Harper Martinez called
+Riley Martin called
+Aubrey Jackson called
+Ava Wilson called
+Harper Martinez called
+Chloe Thomas called
+Caden Martinez folded
+Mike called
+Harper Martinez called
+Riley Martin called
+Aubrey Jackson called
+Harper Martinez called
+Chloe Thomas called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	6H, JH, 4H
+
+Mike's best hand:
+	High Card: QC
+
+Harper Martinez's best hand:
+	High Card: AC
+
+Riley Martin's best hand:
+	Flush
+
+Aubrey Jackson's best hand:
+	High Card: AS
+
+Ava Wilson's best hand:
+	One Pair
+
+Harper Martinez's best hand:
+	One Pair
+
+Chloe Thomas's best hand:
+	High Card: KD
+
+Caden Martinez's best hand:
+	One Pair
+Mike called
+Harper Martinez folded
+Aubrey Jackson called
+Ava Wilson folded
+Harper Martinez called
+Chloe Thomas called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	6H, JH, 4H, 3S
+
+Mike's best hand:
+	High Card: QC
+
+Harper Martinez's best hand:
+	High Card: AC
+
+Riley Martin's best hand:
+	Flush
+
+Aubrey Jackson's best hand:
+	High Card: AS
+
+Ava Wilson's best hand:
+	One Pair
+
+Harper Martinez's best hand:
+	One Pair
+
+Chloe Thomas's best hand:
+	High Card: KD
+
+Caden Martinez's best hand:
+	One Pair
+Mike called
+Aubrey Jackson folded
+Harper Martinez called
+Chloe Thomas folded
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	6H, JH, 4H, 3S, 2H
+
+Mike's best hand:
+	Straight
+
+Harper Martinez's best hand:
+	High Card: AC
+
+Riley Martin's best hand:
+	Flush
+
+Aubrey Jackson's best hand:
+	Flush
+
+Ava Wilson's best hand:
+	One Pair
+
+Harper Martinez's best hand:
+	One Pair
+
+Chloe Thomas's best hand:
+	High Card: KD
+
+Caden Martinez's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Tue Jul 24 09:47:11 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	James Thompson, Layla Thompson, Isabella Smith, Ava Taylor, Sophia Jones, Benjamin <<<<<<< HEAD, Emily Thompson
+
+CARDS DEALT: 
+	Mike: --> 10D AS
+	James Thompson: --> 6C AD
+	Layla Thompson: --> 3H 9C
+	Isabella Smith: --> 8S 4C
+	Ava Taylor: --> 6D QC
+	Sophia Jones: --> 7S JD
+	Benjamin <<<<<<< HEAD: --> 5D KS
+	Emily Thompson: --> 4D 9D
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: AS
+
+James Thompson's best hand:
+	High Card: AD
+
+Layla Thompson's best hand:
+	High Card: 9C
+
+Isabella Smith's best hand:
+	High Card: 8S
+
+Ava Taylor's best hand:
+	High Card: QC
+
+Sophia Jones's best hand:
+	High Card: JD
+
+Benjamin <<<<<<< HEAD's best hand:
+	High Card: KS
+
+Emily Thompson's best hand:
+	High Card: 9D
+Mike called
+James Thompson folded
+Layla Thompson called
+Isabella Smith folded
+Ava Taylor called
+Sophia Jones called
+Benjamin <<<<<<< HEAD called
+Emily Thompson called
+Mike folded
+Layla Thompson called
+Ava Taylor folded
+Sophia Jones folded
+Benjamin <<<<<<< HEAD called
+Emily Thompson folded
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	8D, 9H, JS
+
+Mike's best hand:
+	High Card: AS
+
+James Thompson's best hand:
+	High Card: AD
+
+Layla Thompson's best hand:
+	One Pair
+
+Isabella Smith's best hand:
+	One Pair
+
+Ava Taylor's best hand:
+	High Card: QC
+
+Sophia Jones's best hand:
+	One Pair
+
+Benjamin <<<<<<< HEAD's best hand:
+	High Card: KS
+
+Emily Thompson's best hand:
+	One Pair
+Layla Thompson called
+Benjamin <<<<<<< HEAD called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	8D, 9H, JS, 6H
+
+Mike's best hand:
+	High Card: AS
+
+James Thompson's best hand:
+	One Pair
+
+Layla Thompson's best hand:
+	One Pair
+
+Isabella Smith's best hand:
+	One Pair
+
+Ava Taylor's best hand:
+	One Pair
+
+Sophia Jones's best hand:
+	One Pair
+
+Benjamin <<<<<<< HEAD's best hand:
+	High Card: KS
+
+Emily Thompson's best hand:
+	One Pair
+Benjamin <<<<<<< HEAD folded
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	8D, 9H, JS, 6H, 10C
+
+Mike's best hand:
+	One Pair
+
+James Thompson's best hand:
+	One Pair
+
+Layla Thompson's best hand:
+	One Pair
+
+Isabella Smith's best hand:
+	One Pair
+
+Ava Taylor's best hand:
+	Straight
+
+Sophia Jones's best hand:
+	Straight
+
+Benjamin <<<<<<< HEAD's best hand:
+	High Card: KS
+
+Emily Thompson's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Tue Jul 24 09:51:01 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Aubrey Williams, Logan Anderson, Michael Martin, Olivia White, Adalyn <<<<<<< HEAD, Amelia Wilson, Adalyn Jones
+
+CARDS DEALT: 
+	Mike: --> QS 4S
+	Aubrey Williams: --> KS 9D
+	Logan Anderson: --> 9H AH
+	Michael Martin: --> JC 4D
+	Olivia White: --> AC 3D
+	Adalyn <<<<<<< HEAD: --> 2S KD
+	Amelia Wilson: --> 3S 5C
+	Adalyn Jones: --> 8D 6C
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: QS
+
+Aubrey Williams's best hand:
+	High Card: KS
+
+Logan Anderson's best hand:
+	High Card: AH
+
+Michael Martin's best hand:
+	High Card: JC
+
+Olivia White's best hand:
+	High Card: AC
+
+Adalyn <<<<<<< HEAD's best hand:
+	High Card: KD
+
+Amelia Wilson's best hand:
+	High Card: 5C
+
+Adalyn Jones's best hand:
+	High Card: 8D
+Mike called
+Aubrey Williams called
+Logan Anderson called
+Olivia White called
+Amelia Wilson called
+Adalyn Jones folded
+Mike folded
+Aubrey Williams called
+Michael Martin called
+Olivia White called
+Adalyn <<<<<<< HEAD called
+Amelia Wilson called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	3C, 10S, 2H
+
+Mike's best hand:
+	High Card: QS
+
+Aubrey Williams's best hand:
+	High Card: KS
+
+Logan Anderson's best hand:
+	High Card: AH
+
+Michael Martin's best hand:
+	High Card: JC
+
+Olivia White's best hand:
+	One Pair
+
+Adalyn <<<<<<< HEAD's best hand:
+	One Pair
+
+Amelia Wilson's best hand:
+	One Pair
+
+Adalyn Jones's best hand:
+	High Card: 8D
+Aubrey Williams called
+Logan Anderson folded
+Michael Martin folded
+Olivia White folded
+Adalyn <<<<<<< HEAD called
+Amelia Wilson called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	3C, 10S, 2H, 2D
+
+Mike's best hand:
+	One Pair
+
+Aubrey Williams's best hand:
+	One Pair
+
+Logan Anderson's best hand:
+	One Pair
+
+Michael Martin's best hand:
+	One Pair
+
+Olivia White's best hand:
+	Two Pair
+
+Adalyn <<<<<<< HEAD's best hand:
+	Three of a Kind
+
+Amelia Wilson's best hand:
+	Two Pair
+
+Adalyn Jones's best hand:
+	One Pair
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	3C, 10S, 2H, 2D, 8S
+
+Mike's best hand:
+	One Pair
+
+Aubrey Williams's best hand:
+	One Pair
+
+Logan Anderson's best hand:
+	One Pair
+
+Michael Martin's best hand:
+	One Pair
+
+Olivia White's best hand:
+	Two Pair
+
+Adalyn <<<<<<< HEAD's best hand:
+	Three of a Kind
+
+Amelia Wilson's best hand:
+	Two Pair
+
+Adalyn Jones's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:02:53 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Ava <<<<<<< HEAD, Aiden Jackson, Zoe Harris, Harper Johnson, James Thomas, Lily Johnson, Zoe White
+
+CARDS DEALT: 
+	Mike: --> 4D JD
+	Ava <<<<<<< HEAD: --> 9S AH
+	Aiden Jackson: --> 8H 2H
+	Zoe Harris: --> 7D 10H
+	Harper Johnson: --> 3D 2C
+	James Thomas: --> AS 6H
+	Lily Johnson: --> 10D 4C
+	Zoe White: --> KC QS
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: JD
+
+Ava <<<<<<< HEAD's best hand:
+	High Card: AH
+
+Aiden Jackson's best hand:
+	High Card: 8H
+
+Zoe Harris's best hand:
+	High Card: 10H
+
+Harper Johnson's best hand:
+	High Card: 3D
+
+James Thomas's best hand:
+	High Card: AS
+
+Lily Johnson's best hand:
+	High Card: 10D
+
+Zoe White's best hand:
+	High Card: KC
+Ava <<<<<<< HEAD called
+Aiden Jackson called
+Zoe Harris called
+Harper Johnson called
+Lily Johnson called
+Zoe White called
+Mike called
+Ava <<<<<<< HEAD called
+Aiden Jackson folded
+Zoe Harris folded
+James Thomas called
+Lily Johnson folded
+Zoe White called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	9D, KS, 3H
+
+Mike's best hand:
+	High Card: JD
+
+Ava <<<<<<< HEAD's best hand:
+	One Pair
+
+Aiden Jackson's best hand:
+	High Card: 8H
+
+Zoe Harris's best hand:
+	High Card: 10H
+
+Harper Johnson's best hand:
+	One Pair
+
+James Thomas's best hand:
+	High Card: AS
+
+Lily Johnson's best hand:
+	High Card: 10D
+
+Zoe White's best hand:
+	One Pair
+Mike called
+Ava <<<<<<< HEAD called
+Harper Johnson called
+James Thomas folded
+Zoe White called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	9D, KS, 3H, 4H
+
+Mike's best hand:
+	One Pair
+
+Ava <<<<<<< HEAD's best hand:
+	One Pair
+
+Aiden Jackson's best hand:
+	High Card: 8H
+
+Zoe Harris's best hand:
+	High Card: 10H
+
+Harper Johnson's best hand:
+	One Pair
+
+James Thomas's best hand:
+	High Card: AS
+
+Lily Johnson's best hand:
+	One Pair
+
+Zoe White's best hand:
+	One Pair
+Mike called
+Ava <<<<<<< HEAD folded
+Harper Johnson called
+Zoe White called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	9D, KS, 3H, 4H, 6C
+
+Mike's best hand:
+	One Pair
+
+Ava <<<<<<< HEAD's best hand:
+	One Pair
+
+Aiden Jackson's best hand:
+	High Card: 8H
+
+Zoe Harris's best hand:
+	High Card: 10H
+
+Harper Johnson's best hand:
+	One Pair
+
+James Thomas's best hand:
+	One Pair
+
+Lily Johnson's best hand:
+	One Pair
+
+Zoe White's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:06:10 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Lily Martinez, Aubrey Brown, Charlotte Johnson, Madison Anderson, Ava Miller, Liam Taylor, Olivia Davis
+
+CARDS DEALT: 
+	Mike: --> 10H 8H
+	Lily Martinez: --> JC AH
+	Aubrey Brown: --> 6C 2D
+	Charlotte Johnson: --> KH 2S
+	Madison Anderson: --> 7D 4C
+	Ava Miller: --> 10D 3D
+	Liam Taylor: --> 8C 10C
+	Olivia Davis: --> 9H JD
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: 10H
+
+Lily Martinez's best hand:
+	High Card: AH
+
+Aubrey Brown's best hand:
+	High Card: 6C
+
+Charlotte Johnson's best hand:
+	High Card: KH
+
+Madison Anderson's best hand:
+	High Card: 7D
+
+Ava Miller's best hand:
+	High Card: 10D
+
+Liam Taylor's best hand:
+	High Card: 10C
+
+Olivia Davis's best hand:
+	High Card: JD
+Mike called
+Lily Martinez called
+Madison Anderson called
+Ava Miller called
+Liam Taylor called
+Olivia Davis called
+Mike folded
+Lily Martinez called
+Aubrey Brown called
+Charlotte Johnson called
+Madison Anderson called
+Ava Miller called
+Liam Taylor called
+Olivia Davis folded
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	4D, AS, 6S
+
+Mike's best hand:
+	High Card: 10H
+
+Lily Martinez's best hand:
+	One Pair
+
+Aubrey Brown's best hand:
+	One Pair
+
+Charlotte Johnson's best hand:
+	High Card: KH
+
+Madison Anderson's best hand:
+	One Pair
+
+Ava Miller's best hand:
+	High Card: 10D
+
+Liam Taylor's best hand:
+	High Card: 10C
+
+Olivia Davis's best hand:
+	High Card: JD
+Lily Martinez called
+Aubrey Brown called
+Charlotte Johnson called
+Madison Anderson called
+Ava Miller called
+Liam Taylor folded
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	4D, AS, 6S, QS
+
+Mike's best hand:
+	High Card: 10H
+
+Lily Martinez's best hand:
+	One Pair
+
+Aubrey Brown's best hand:
+	One Pair
+
+Charlotte Johnson's best hand:
+	High Card: KH
+
+Madison Anderson's best hand:
+	One Pair
+
+Ava Miller's best hand:
+	High Card: 10D
+
+Liam Taylor's best hand:
+	High Card: 10C
+
+Olivia Davis's best hand:
+	High Card: JD
+Charlotte Johnson folded
+Madison Anderson called
+Ava Miller folded
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	4D, AS, 6S, QS, QC
+
+Mike's best hand:
+	One Pair
+
+Lily Martinez's best hand:
+	Two Pair
+
+Aubrey Brown's best hand:
+	Two Pair
+
+Charlotte Johnson's best hand:
+	One Pair
+
+Madison Anderson's best hand:
+	One Pair
+
+Ava Miller's best hand:
+	One Pair
+
+Liam Taylor's best hand:
+	One Pair
+
+Olivia Davis's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:16:58 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Lucas Garcia, Harper Jones, Harper Martin, Aiden Johnson, Grayson Williams, Olivia Smith, Madison Johnson
+
+CARDS DEALT: 
+	Mike: --> JD 2D
+	Lucas Garcia: --> AD 7C
+	Harper Jones: --> 5C KD
+	Harper Martin: --> 9S 2S
+	Aiden Johnson: --> 6S 10C
+	Grayson Williams: --> KS AS
+	Olivia Smith: --> 9D KC
+	Madison Johnson: --> QD 10H
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: JD
+
+Lucas Garcia's best hand:
+	High Card: AD
+
+Harper Jones's best hand:
+	High Card: KD
+
+Harper Martin's best hand:
+	High Card: 9S
+
+Aiden Johnson's best hand:
+	High Card: 10C
+
+Grayson Williams's best hand:
+	High Card: AS
+
+Olivia Smith's best hand:
+	High Card: KC
+
+Madison Johnson's best hand:
+	High Card: QD
+Mike called
+Lucas Garcia folded
+Harper Jones called
+Harper Martin called
+Aiden Johnson called
+Grayson Williams folded
+Olivia Smith called
+Mike folded
+Harper Jones called
+Harper Martin called
+Aiden Johnson called
+Olivia Smith called
+Madison Johnson called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	7D, KH, 4D
+
+Mike's best hand:
+	High Card: JD
+
+Lucas Garcia's best hand:
+	One Pair
+
+Harper Jones's best hand:
+	One Pair
+
+Harper Martin's best hand:
+	High Card: 9S
+
+Aiden Johnson's best hand:
+	High Card: 10C
+
+Grayson Williams's best hand:
+	One Pair
+
+Olivia Smith's best hand:
+	One Pair
+
+Madison Johnson's best hand:
+	High Card: QD
+Harper Jones called
+Harper Martin folded
+Aiden Johnson called
+Olivia Smith called
+Madison Johnson called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	7D, KH, 4D, 7S
+
+Mike's best hand:
+	One Pair
+
+Lucas Garcia's best hand:
+	Three of a Kind
+
+Harper Jones's best hand:
+	Two Pair
+
+Harper Martin's best hand:
+	One Pair
+
+Aiden Johnson's best hand:
+	One Pair
+
+Grayson Williams's best hand:
+	Two Pair
+
+Olivia Smith's best hand:
+	Two Pair
+
+Madison Johnson's best hand:
+	One Pair
+Harper Jones called
+Aiden Johnson called
+Olivia Smith called
+Madison Johnson called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	7D, KH, 4D, 7S, QS
+
+Mike's best hand:
+	One Pair
+
+Lucas Garcia's best hand:
+	Three of a Kind
+
+Harper Jones's best hand:
+	Two Pair
+
+Harper Martin's best hand:
+	One Pair
+
+Aiden Johnson's best hand:
+	One Pair
+
+Grayson Williams's best hand:
+	Two Pair
+
+Olivia Smith's best hand:
+	One Pair
+
+Madison Johnson's best hand:
+	Two Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:19:41 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Madelyn Davis, Alexander Smith, Ethan Wilson, Emma Garcia, Zoe Robinson, Aria Robinson, Alexander Brown
+
+CARDS DEALT: 
+	Mike: --> 5H JC
+	Madelyn Davis: --> JD 8D
+	Alexander Smith: --> AS QS
+	Ethan Wilson: --> 3C 9D
+	Emma Garcia: --> 2H 7S
+	Zoe Robinson: --> 4S 3D
+	Aria Robinson: --> AC 8C
+	Alexander Brown: --> 6S 2C
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: JC
+
+Madelyn Davis's best hand:
+	High Card: JD
+
+Alexander Smith's best hand:
+	High Card: AS
+
+Ethan Wilson's best hand:
+	High Card: 9D
+
+Emma Garcia's best hand:
+	High Card: 7S
+
+Zoe Robinson's best hand:
+	High Card: 4S
+
+Aria Robinson's best hand:
+	High Card: AC
+
+Alexander Brown's best hand:
+	High Card: 6S
+Mike called
+Madelyn Davis called
+Ethan Wilson called
+Emma Garcia called
+Zoe Robinson called
+Aria Robinson called
+Alexander Brown called
+Mike folded
+Madelyn Davis called
+Alexander Smith called
+Ethan Wilson called
+Emma Garcia called
+Zoe Robinson called
+Aria Robinson folded
+Alexander Brown called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	8S, JH, 7H
+
+Mike's best hand:
+	One Pair
+
+Madelyn Davis's best hand:
+	Two Pair
+
+Alexander Smith's best hand:
+	High Card: AS
+
+Ethan Wilson's best hand:
+	High Card: 9D
+
+Emma Garcia's best hand:
+	One Pair
+
+Zoe Robinson's best hand:
+	High Card: 4S
+
+Aria Robinson's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	High Card: 6S
+Madelyn Davis called
+Alexander Smith called
+Ethan Wilson called
+Zoe Robinson called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	8S, JH, 7H, 9H
+
+Mike's best hand:
+	One Pair
+
+Madelyn Davis's best hand:
+	Two Pair
+
+Alexander Smith's best hand:
+	High Card: AS
+
+Ethan Wilson's best hand:
+	One Pair
+
+Emma Garcia's best hand:
+	One Pair
+
+Zoe Robinson's best hand:
+	High Card: 4S
+
+Aria Robinson's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	High Card: 6S
+Madelyn Davis called
+Alexander Smith folded
+Ethan Wilson called
+Emma Garcia folded
+Zoe Robinson folded
+Alexander Brown called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	8S, JH, 7H, 9H, QD
+
+Mike's best hand:
+	One Pair
+
+Madelyn Davis's best hand:
+	Two Pair
+
+Alexander Smith's best hand:
+	One Pair
+
+Ethan Wilson's best hand:
+	One Pair
+
+Emma Garcia's best hand:
+	One Pair
+
+Zoe Robinson's best hand:
+	High Card: 4S
+
+Aria Robinson's best hand:
+	One Pair
+
+Alexander Brown's best hand:
+	High Card: 6S
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:24:46 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Noah Brown, Layla Johnson, Madelyn Robinson, Ava Garcia, Madelyn Martinez, James Garcia, Emily Martinez
+
+CARDS DEALT: 
+	Mike: --> 2C AS
+	Noah Brown: --> 10C AC
+	Layla Johnson: --> QC 2D
+	Madelyn Robinson: --> 8C JS
+	Ava Garcia: --> 4C AH
+	Madelyn Martinez: --> 10D 6C
+	James Garcia: --> 7C 6H
+	Emily Martinez: --> 4D 5H
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: AS
+
+Noah Brown's best hand:
+	High Card: AC
+
+Layla Johnson's best hand:
+	High Card: QC
+
+Madelyn Robinson's best hand:
+	High Card: JS
+
+Ava Garcia's best hand:
+	High Card: AH
+
+Madelyn Martinez's best hand:
+	High Card: 10D
+
+James Garcia's best hand:
+	High Card: 7C
+
+Emily Martinez's best hand:
+	High Card: 5H
+Mike called
+Noah Brown called
+Layla Johnson called
+Madelyn Robinson folded
+Ava Garcia called
+Madelyn Martinez called
+Emily Martinez called
+Mike called
+Noah Brown called
+Layla Johnson called
+James Garcia called
+Emily Martinez called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	KH, 2H, 4S
+
+Mike's best hand:
+	One Pair
+
+Noah Brown's best hand:
+	High Card: AC
+
+Layla Johnson's best hand:
+	One Pair
+
+Madelyn Robinson's best hand:
+	High Card: JS
+
+Ava Garcia's best hand:
+	One Pair
+
+Madelyn Martinez's best hand:
+	High Card: 10D
+
+James Garcia's best hand:
+	High Card: 7C
+
+Emily Martinez's best hand:
+	One Pair
+Mike called
+Noah Brown called
+Layla Johnson folded
+Ava Garcia called
+Madelyn Martinez folded
+James Garcia called
+Emily Martinez called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	KH, 2H, 4S, 7D
+
+Mike's best hand:
+	One Pair
+
+Noah Brown's best hand:
+	High Card: AC
+
+Layla Johnson's best hand:
+	One Pair
+
+Madelyn Robinson's best hand:
+	High Card: JS
+
+Ava Garcia's best hand:
+	One Pair
+
+Madelyn Martinez's best hand:
+	High Card: 10D
+
+James Garcia's best hand:
+	One Pair
+
+Emily Martinez's best hand:
+	One Pair
+Mike folded
+Noah Brown folded
+Ava Garcia called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	KH, 2H, 4S, 7D, AD
+
+Mike's best hand:
+	One Pair
+
+Noah Brown's best hand:
+	One Pair
+
+Layla Johnson's best hand:
+	One Pair
+
+Madelyn Robinson's best hand:
+	High Card: JS
+
+Ava Garcia's best hand:
+	One Pair
+
+Madelyn Martinez's best hand:
+	High Card: 10D
+
+James Garcia's best hand:
+	One Pair
+
+Emily Martinez's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:32:29 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Carter Williams, Jackson Jackson, Jackson Williams, Oliver Harris
+
+CARDS DEALT: 
+	Mike: --> 8S 6S
+	Carter Williams: --> 10S QD
+	Jackson Jackson: --> 4C 10H
+	Jackson Williams: --> 2S 5H
+	Oliver Harris: --> KH QH
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: 8S
+
+Carter Williams's best hand:
+	High Card: QD
+
+Jackson Jackson's best hand:
+	High Card: 10H
+
+Jackson Williams's best hand:
+	High Card: 5H
+
+Oliver Harris's best hand:
+	High Card: KH
+Mike called
+Jackson Jackson called
+Jackson Williams called
+Oliver Harris called
+Mike called
+Carter Williams called
+Jackson Jackson called
+Jackson Williams folded
+Oliver Harris called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	7H, 10C, 3C
+
+Mike's best hand:
+	High Card: 8S
+
+Carter Williams's best hand:
+	One Pair
+
+Jackson Jackson's best hand:
+	One Pair
+
+Jackson Williams's best hand:
+	High Card: 5H
+
+Oliver Harris's best hand:
+	High Card: KH
+Mike called
+Carter Williams called
+Jackson Jackson called
+Oliver Harris called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	7H, 10C, 3C, 9D
+
+Mike's best hand:
+	Straight
+
+Carter Williams's best hand:
+	One Pair
+
+Jackson Jackson's best hand:
+	One Pair
+
+Jackson Williams's best hand:
+	High Card: 5H
+
+Oliver Harris's best hand:
+	High Card: KH
+Mike called
+Carter Williams folded
+Jackson Jackson called
+Oliver Harris folded
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	7H, 10C, 3C, 9D, KS
+
+Mike's best hand:
+	Straight
+
+Carter Williams's best hand:
+	One Pair
+
+Jackson Jackson's best hand:
+	One Pair
+
+Jackson Williams's best hand:
+	High Card: 5H
+
+Oliver Harris's best hand:
+	One Pair
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:40:29 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Michael Davis, Emily Taylor, Alexander Anderson, Layla Thomas
+
+CARDS DEALT: 
+	Mike: --> 7H 5H
+	Michael Davis: --> 5D 10D
+	Emily Taylor: --> AH 9D
+	Alexander Anderson: --> 9S QC
+	Layla Thomas: --> JH JS
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: 7H
+
+Michael Davis's best hand:
+	High Card: 10D
+
+Emily Taylor's best hand:
+	High Card: AH
+
+Alexander Anderson's best hand:
+	High Card: QC
+
+Layla Thomas's best hand:
+	One Pair
+Mike called
+Michael Davis called
+Emily Taylor called
+Layla Thomas called
+Mike called
+Michael Davis called
+Emily Taylor called
+Layla Thomas called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	QH, 5C, 3H
+
+Mike's best hand:
+	One Pair
+
+Michael Davis's best hand:
+	One Pair
+
+Emily Taylor's best hand:
+	High Card: AH
+
+Alexander Anderson's best hand:
+	One Pair
+
+Layla Thomas's best hand:
+	One Pair
+Mike called
+Emily Taylor called
+Alexander Anderson called
+Layla Thomas called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	QH, 5C, 3H, JC
+
+Mike's best hand:
+	One Pair
+
+Michael Davis's best hand:
+	One Pair
+
+Emily Taylor's best hand:
+	High Card: AH
+
+Alexander Anderson's best hand:
+	One Pair
+
+Layla Thomas's best hand:
+	Three of a Kind
+Mike called
+Michael Davis folded
+Emily Taylor folded
+Alexander Anderson called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	QH, 5C, 3H, JC, 2H
+
+Mike's best hand:
+	Flush
+
+Michael Davis's best hand:
+	One Pair
+
+Emily Taylor's best hand:
+	High Card: AH
+
+Alexander Anderson's best hand:
+	One Pair
+
+Layla Thomas's best hand:
+	Three of a Kind
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:46:59 EDT 2018
+
+PLAYER NAME:
+	Mike
+
+AI PLAYERS:
+	Emma White, Emily Smith, Aiden Thomas, Sophia Brown, Grayson Taylor
+
+CARDS DEALT: 
+	Mike: --> 10H 7C
+	Emma White: --> JC KC
+	Emily Smith: --> JD 8C
+	Aiden Thomas: --> QC JS
+	Sophia Brown: --> AS 5H
+	Grayson Taylor: --> 2S 3D
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+Mike's best hand:
+	High Card: 10H
+
+Emma White's best hand:
+	High Card: KC
+
+Emily Smith's best hand:
+	High Card: JD
+
+Aiden Thomas's best hand:
+	High Card: QC
+
+Sophia Brown's best hand:
+	High Card: AS
+
+Grayson Taylor's best hand:
+	High Card: 3D
+Mike called
+Emma White raised
+Emily Smith called
+Aiden Thomas called
+Sophia Brown called
+Grayson Taylor called
+Mike called
+Emma White called
+Emily Smith called
+Aiden Thomas called
+Sophia Brown called
+Grayson Taylor folded
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	KD, KH, 2H
+
+Mike's best hand:
+	One Pair
+
+Emma White's best hand:
+	Three of a Kind
+
+Emily Smith's best hand:
+	One Pair
+
+Aiden Thomas's best hand:
+	One Pair
+
+Sophia Brown's best hand:
+	One Pair
+
+Grayson Taylor's best hand:
+	Two Pair
+Mike called
+Emma White folded
+Emily Smith called
+Aiden Thomas called
+Sophia Brown folded
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	KD, KH, 2H, 2D
+
+Mike's best hand:
+	One Pair
+
+Emma White's best hand:
+	Three of a Kind
+
+Emily Smith's best hand:
+	One Pair
+
+Aiden Thomas's best hand:
+	One Pair
+
+Sophia Brown's best hand:
+	Two Pair
+
+Grayson Taylor's best hand:
+	Three of a Kind
+Mike called
+Emily Smith raised
+Aiden Thomas called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	KD, KH, 2H, 2D, 6S
+
+Mike's best hand:
+	One Pair
+
+Emma White's best hand:
+	Three of a Kind
+
+Emily Smith's best hand:
+	One Pair
+
+Aiden Thomas's best hand:
+	One Pair
+
+Sophia Brown's best hand:
+	One Pair
+
+Grayson Taylor's best hand:
+	Three of a Kind
+================================================================================
+================================================================================
+GAME STARTED - Thu Aug 02 07:50:37 EDT 2018
+
+PLAYER NAME:
+	asdf
+
+AI PLAYERS:
+	Lucas Moore, Adalyn Smith, Lily Thompson, Oliver Taylor
+
+CARDS DEALT: 
+	asdf: --> 7H 10D
+	Lucas Moore: --> KS 9D
+	Adalyn Smith: --> 7C 8H
+	Lily Thompson: --> 7D 7S
+	Oliver Taylor: --> 6C 9H
+
+------PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP----PRE-FLOP------
+
+asdf's best hand:
+	High Card: 10D
+
+Lucas Moore's best hand:
+	High Card: KS
+
+Adalyn Smith's best hand:
+	High Card: 8H
+
+Lily Thompson's best hand:
+	One Pair
+
+Oliver Taylor's best hand:
+	High Card: 9H
+asdf called
+Lucas Moore called
+Adalyn Smith called
+Lily Thompson called
+Oliver Taylor called
+asdf called
+Lucas Moore called
+Adalyn Smith raised
+Lily Thompson called
+Oliver Taylor called
+
+------FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP----FLOP------
+
+FLOP CARDS:
+	QD, 8C, 5H
+
+asdf's best hand:
+	High Card: 10D
+
+Lucas Moore's best hand:
+	High Card: KS
+
+Adalyn Smith's best hand:
+	One Pair
+
+Lily Thompson's best hand:
+	One Pair
+
+Oliver Taylor's best hand:
+	High Card: 9H
+asdf called
+Lucas Moore called
+Adalyn Smith called
+Lily Thompson called
+Oliver Taylor called
+
+------TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN----TURN------
+
+TURN CARDS:
+	QD, 8C, 5H, QS
+
+asdf's best hand:
+	One Pair
+
+Lucas Moore's best hand:
+	One Pair
+
+Adalyn Smith's best hand:
+	Two Pair
+
+Lily Thompson's best hand:
+	Two Pair
+
+Oliver Taylor's best hand:
+	One Pair
+asdf called
+Lucas Moore called
+Adalyn Smith raised
+Lily Thompson called
+Oliver Taylor called
+
+------RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER----RIVER------
+
+RIVER CARDS:
+	QD, 8C, 5H, QS, AD
+
+asdf's best hand:
+	One Pair
+
+Lucas Moore's best hand:
+	One Pair
+
+Adalyn Smith's best hand:
+	Two Pair
+
+Lily Thompson's best hand:
+	Two Pair
+
+Oliver Taylor's best hand:
+	One Pair
