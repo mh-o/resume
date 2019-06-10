@@ -1,0 +1,327 @@
+%form#new_stuff{:action => object.url(:path => 'metadata'), :method => :post}
+
+  - if !defined?(show_links)
+    - show_links = true
+
+  %h2
+    = I18n.t 'subheaders.information'
+
+  .information
+    - # TODO: URLs
+    .uuid
+      %h2.icon.uuid
+        = I18n.t 'subsubheaders.uuid'
+      %p
+        #{object.uuid}
+    .revision
+      %h2.icon.revision
+        = I18n.t 'subsubheaders.revision'
+      %p
+        #{object.revision}
+
+    - if object.ownerUUID != object.uuid
+      - owner = Occam::Object.new(:uuid => object.ownerUUID, :revision => object.revision, :account => object.account)
+      - if owner && owner.info
+        .within.object
+          %h2.object.icon
+            = I18n.t 'subsubheaders.within'
+          %p
+            %a{:href => "/objects/#{object.ownerUUID}/#{object.revision}"}
+              #{owner.info[:type]} #{owner.info[:name]}
+    - if object.info[:authors]
+      .authors
+        %h2.icon.authors
+          = I18n.t 'subsubheaders.authors'
+        %ul
+          - object.info[:authors].each do |author|
+            %li
+              - if isUUID(author)
+                - person = Occam::Person.new(:uuid => author)
+                - if person
+                  %a{:href => "/people/#{person.uuid}"}
+                    #{person.info[:name]}
+                - else
+                  #{author}
+              - else
+                #{author}
+    - if object.info[:collaborators]
+      .authors
+        %h2.icon.collaborators
+          = I18n.t 'subsubheaders.collaborators'
+        %ul
+          - object.info[:collaborators].each do |author|
+            %li
+              = author
+        -# TODO: author/collaborator add
+    .website{:hidden => !object.info.has_key?(:website)}
+      %h2.icon.website
+        = I18n.t 'subsubheaders.website'
+      %p
+        %a{:href => object.info[:website]}<
+          #{object.info[:website]}
+        %a.edit{:href => "#", :alt => I18n.t('tooltips.edit'), :title => I18n.t('tooltips.edit'),}< Edit
+      %p{:hidden => true}
+        %input{:style => "height: 8px", :name => :website, :value => object.info[:website]}<
+
+    - if !reviewing
+      .history
+        %h2.icon.history
+          = I18n.t 'subsubheaders.history'
+        %p
+          - parent = object.parentRevision
+          - if parent
+            %a{:href => Occam::Object.new(:uuid     => object.uuid,
+                                          :revision => parent).url}<
+              #{parent[0..6]}...
+            \>
+          = I18n.t 'subsubheaders.currentRevision'
+          - children = object.childRevisions
+          - if not children.empty?
+            \>
+            - children.each do |child_revision|
+              %a{:href => Occam::Object.new(:uuid     => object.uuid,
+                                            :revision => child_revision).url}<
+                #{child_revision[0..6]}...,
+
+    .source{:hidden => !object.info.has_key?(:source)}
+      %h2.icon.source
+        = I18n.t 'subsubheaders.source'
+      %p
+        #{object.info[:source]}
+        %a.edit{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'),}< Edit
+      %p{:hidden => true}
+        %input{:style => "height: 10px", :name => :source, :value => object.info[:source]}
+
+    .backed{:hidden => !object.info.has_key?(:backed)}
+      %h2.icon.backed
+        = I18n.t 'subsubheaders.link'
+      %p
+        %a{:href => "/#{object.info[:backed]}/#{object.uuid}"}
+          #{object.info[:backed]}
+        %a.edit{:href => "#", :alt => I18n.t('tooltips.edit'), :title => I18n.t('tooltips.edit'),}< Edit
+      %p{:hidden => true}
+        %input{:style => "height: 10px", :name => :backed, :value => object.info[:backed]}
+
+    - if object.info.has_key? :clonedFrom
+      .clonedFrom
+        %h2.icon.clonedFrom
+          = I18n.t 'subsubheaders.clonedFrom'
+        %p
+          - if object.info[:clonedFrom].is_a? String
+            %a{:href => "/objects/#{object.info[:clonedFrom]}"}
+              #{object.info[:clonedFrom]}
+          - else
+            - if object.info[:clonedFrom].has_key? :type
+              #{object.info[:clonedFrom][:type]}
+            - if object.info[:clonedFrom].has_key? :name
+              %a{:href => "/objects/#{object.info[:clonedFrom][:id]}/#{object.info[:clonedFrom][:revision]}"}
+                #{object.info[:clonedFrom][:name]}
+            - else
+              %a{:href => "/objects/#{object.info[:clonedFrom]['id']}/#{object.info[:clonedFrom][:revision]}"}
+                #{object.info[:clonedFrom][:id]}
+    - if object.info.has_key? :generator
+      .generator
+        %h2.icon.generator
+          = I18n.t 'subsubheaders.generator'
+        %ul
+          - if object.info[:generator].is_a? String
+            %li
+              %a{:href => "/objects/#{object.info[:generator]}"}
+                #{object.info[:generator]}
+          - else
+            - object.info[:generator].each do |generator|
+              %li
+                - generator_object = Occam::Object.new(generator)
+                - if generator
+                  - if generator.has_key? :type
+                    #{generator[:type]}
+                  - if generator.has_key? :name
+                    %a{:href => generator_object.url}
+                      #{generator[:name]}
+                  - else
+                    %a{:href => generator_object.url}
+                      #{generator[:id]}
+
+
+    - if object.info.has_key? :configures
+      .configuration
+        %h2.icon.configuration
+          = I18n.t 'subsubheaders.configures'
+        %p
+          - configures_object = Occam::Object.where(:uid => object.info[:configures]['id']).first()
+          - if configures_object
+            %a{:href => configures_object.url}
+              #{configures_object.name}
+          - else
+            #{object.info[:configures]['id']}
+    .configuration{:hidden => !object.info.has_key?(:views)}
+      %h2.icon.configuration
+        = I18n.t 'subsubheaders.views'
+      %ul
+        - views = object.info[:views] || []
+        - views = [views] if not views.is_a?(Array)
+        - views.each do |objectType|
+          - if objectType.is_a? Hash
+            %a{:href => "/search?type=#{objectType[:type]}"}<
+              #{objectType[:type]}
+            - if objectType.has_key? :subtype
+              (#{objectType[:subtype]})
+          - else
+            %a{:href => "/search?type=#{objectType}"}
+              #{objectType}
+
+        %a.edit{:href => "#", :alt => I18n.t('tooltips.edit'), :title => I18n.t('tooltips.edit'),}< Edit
+      %p{:hidden => true}
+        %input{:style => "height: 10px", :name => :views, :value => object.info[:views]}
+
+    - if object.info.has_key? :configurations
+      .configuration
+        %h2.icon.configuration
+          = I18n.t 'subsubheaders.configuration'
+        %ul
+          - object.info[:configurations].each_with_index do |configuration, i|
+            %li.configuration.default
+              %a{:href => "/objects/#{object.uuid}/#{object.revision}/configurations/#{i}"}
+                #{configuration['name'] || "Unnamed Configuration"}
+            -# TODO: recipes
+            -#- recipes.each do |recipe|
+            -#  %li.configuration
+            -#    %a{:href => "/objects/#{object.id}/recipes/#{recipe.id}"}
+            -#      #{recipe.name}
+    -# TODO: associated objects / binaries
+    -# TODO: runs binaries (attached to inputs)
+    -# just f-phreaking list inputs gosh darn it
+    - if object.configurators.any?
+      .configuration
+        %h2.icon.configuration
+          = I18n.t 'subsubheaders.widgets'
+        %ul
+          - object.configurators.each do |configurator|
+            %li
+              %a{:href => "/objects/#{configurator.object_type_safe}/#{configurator.uuid}"}
+                #{configurator.name}
+
+    -# 1980
+
+    - if object.info.has_key? :environment
+      .environment
+        %h2.icon.environment
+          = I18n.t 'subsubheaders.environment'
+        %p#old_environment
+          #{object.info[:environment]}
+          %a.edit{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'),}< Edit
+        %p#new_environment{:hidden => true}
+          %input{:style => "height: 10px", :name => :environment, :id => :environment, :value => object.info[:environemnt]}
+
+
+    .architecture{:hidden => !object.info.has_key?(:architecture)}
+      %h2.icon.architecture
+        = I18n.t 'subsubheaders.architecture'
+      %p#old_architecture
+        #{object.info[:architecture]}
+        %a.edit{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'),}< Edit
+      %p#new_architecture{:hidden => true}
+        %input{:style => "height: 10px",  :name => :architecture, :id => :architecture, :value => object.info[:architecture]}
+
+    - if object.info[:provides]
+      .provides
+        %h2.icon.provides
+          = I18n.t 'subsubheaders.provides'
+        %p
+          #{object.info[:provides]['environment']}/#{object.info[:provides]['architecture']}
+    - if (object.info[:inputs] && object.info[:inputs].any?) || object.info.has_key?(:run)
+      .inputs
+        %h2.icon.inputs
+          = I18n.t 'subsubheaders.inputs'
+        - if object.info[:inputs].nil? or object.info[:inputs].empty?
+          %p
+            = I18n.t 'common.none'
+        - else
+          %ul
+            - object.info[:inputs].each do |input|
+              %li.input
+                #{input['type']}
+                - if input['group']
+                  #{I18n.t('common.within')} #{input['group']}
+    - if (object.info[:inputs] && object.info[:inputs].any?) || object.info.has_key?(:run)
+      .outputs
+        %h2.icon.outputs
+          = I18n.t 'subsubheaders.outputs'
+        - if object.info[:outputs].nil? or object.info[:outputs].empty?
+          %p
+            = I18n.t 'common.none'
+        - else
+          %ul
+            - object.info[:outputs].each_with_index do |output, i|
+              %li.output
+                #{output['type']}
+                - if output.has_key? 'group'
+                  #{I18n.t('common.within')} #{output['group']}
+                - if output.has_key? 'schema'
+                  %a{:href => "/objects/#{object.object_type}/#{object.uuid}/#{object.revision}/outputs/#{i}"}
+                    schema
+    - if object.info[:license]
+      .license
+        %h2.icon.license
+          = I18n.t 'subsubheaders.license'
+        - if object.info[:license].is_a? Array
+          %ul
+            - object.info[:license].each do |license|
+              %li
+                %p
+                  - if license.is_a? Hash
+                    %p
+                      %a{:href => object.url(:path => "files/" + license[:file])}
+                        #{license[:name]}
+                  - else
+                    #{license}
+        - elsif object.info[:license].is_a? Hash
+          %p
+            %a{:href => object.url(:path => "files/" + object.info[:license][:file])}
+              #{object.info[:license][:name]}
+        - else
+          %p
+            #{object.info[:license]}
+
+    -# Links
+    - if show_links
+      .perma-link
+        %h2.icon.perma-link
+          = I18n.t 'subsubheaders.perma-link'
+        %p
+          %a{:href => object.url(:full => true)}<
+            = I18n.t 'subsubheaders.link'
+          %a.copy{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'), :hidden => true, :"data-url" => object.url(:full => true)}<
+            = I18n.t 'common.copy'
+      .embed-link
+        %h2.icon.embed-link
+          = I18n.t 'subsubheaders.embed-link'
+        %p
+          %a{:href => object.url(:full => true, :query => {"embed" => true})}<
+            = I18n.t 'subsubheaders.link'
+          %a.copy{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'), :hidden => true, :"data-url" => object.url(:full => true, :query => {"embed" => true})}<
+            = I18n.t 'common.copy'
+      .qrcode{:"aria-hidden" => "true"}
+        %h2.icon.qrcode
+          = I18n.t 'subsubheaders.qrcode'
+        %p
+          %a.modal{:href => object.url(:path => "qrcode.png")}>#{I18n.t "common.generate"}
+      .rss-link
+        %h2.icon.rss-link
+          = I18n.t 'subsubheaders.rss-link'
+        %p
+          %a{:href => object.url(:path=>"feed")} RSS
+          %a.copy{:href => "#", :alt => I18n.t('tooltips.copy'), :title => I18n.t('tooltips.copy'), :"aria-hidden" => "true", :"data-url" => object.url(:path=>"feed")}<
+            = I18n.t 'common.copy'
+
+    -# 1980
+    - if true
+      .other-keys
+        %h2.icon.rss-link
+          = I18n.t 'subsubheaders.other-keys'
+        %p#old_element
+          %select.options
+            - object.undefinedKeys.each do |item|
+              %option{:name => 'myopt', :id => 'myopt', :value => item} #{item}
+        %p#drop_env{:hidden => true}
+      %input{:type => "submit", :value => "Submit All Changes"}

@@ -1,0 +1,446 @@
+en:
+  # Top (h1) Headers
+  headers:
+    signin:           "Sign In"                # Log in page
+    signup:           "Sign Up"                # New Account page
+    admin:            "System Administration"  # The administration page
+    pageNotFound:     "Page Cannot Be Found"   # 404 page
+    havingProblem:    "We're Having a Problem" # 500 page
+    runList:          "Run Queue List"         # Run list header
+
+  # Main and supplemental tab strip labels
+  tabs:
+    access:           "Access"                 # Lists ACL/permissions information
+    metadata:         "Metadata"               # Lists general information
+    social:           "Social"                 # Lists the social content (comments, etc)
+    history:          "History"                # Commit History
+    details:          "Details"                # Lists general information about an object
+    files:            "Files"                  # Lists files contained in object
+    output:           "Output"                 # Lists object outputs
+    run:              "Run"                    # Views page to run the object
+    build:            "Build"                  # Shows object build terminal
+    console:          "Console"                # Shows object console
+    citation:         "Citation"               # Shows object citation
+    pages:            "Pages"                  # Paper pages listing
+    page:             "Page %s"                # Paper page. Embeds page number where %s
+    workflow:         "Workflow"               # Shows experiment workflow
+    contents:         "Contents"               # Lists groups/experiment within group/workset
+    view:             "View"                   # Shows the object
+    provenance:       "Provenance"             # Shows object's provenance
+    reviewLinks:      "Review Links"           # Manages review permissions
+    worksets:         "Worksets"               # Listing a person's worksets
+    collection:       "Collection"             # Listing a person's stuff
+    memberships:      "Memberships"            # Listing which groups a Person is a member of
+    bookmarks:        "Bookmarks"              # Listing a person's bookmarks
+    import:           "Import"                 # Pulling an object into the archive
+    jobs:             "Jobs"                   # Listing a person's queued work
+
+    object:           "Object"                 # Object selection tab
+    environment:      "Environment"            # Task environment tab for determining how to run something
+    datasets:         "Datasets"               # Data viewer tab to list what data has been linked
+    openData:         "Open Data"              # Data viewer tab to select a dataset to open
+
+    terminal:         "Terminal"               # Shows terminal point of view during run
+    pastBuilds:       "Past Builds"            # Lists past builds and build metadata
+    video:            "Video"                  # Shows video point of view during run
+    log:              "Log"                    # Shows detailed log point of view during run
+    admin:            "Admin"                  # Shows admin options per object
+
+  # Subheaders (h2,h3) within the page
+  subheaders:
+    errors:           "Errors"                 # For form errors
+    information:      "General Information"    # Listing metadata
+    permissions:      "Permissions"            # Access Control metadata
+    childPermissions: "Children Permissions"   # Access Control for object's children
+    resources:        "Resources"              # Resources objects require
+    build:            "Build"                  # The 'build' section
+    history:          "History"                # The object's 'history' section
+    run:              "Run"                    # The 'run' section
+    related:          "Related"                # When listing linked related objects
+    listing:          "Listing"                # File listing (this is followed by path)
+    data:             "Data"                   # When listing file data
+    output:           "Output"                 # Listing object outputs
+    citation:         "Bibliography Data"      # Listing object citation
+    console:          "Console"                # Console page for an object
+    build:            "Build"                  # Build page for an object
+    run:              "Run"                    # Run page for an object
+    worksets:         "Worksets"               # Listing a person's worksets
+    currentJobs:      "Current Jobs"           # Listing running jobs
+    publicKey:        "Public Key"             # Lists public keys
+    directory:        "Directory"              # Contents listing (lists groups, experiments etc)
+    newInputSet:      "New Input Set"          # File list input that signifies a new input set.
+    inputSet:         "Input Set %s"           # The names of the file list input sets.
+    filesInObject:    "Files in Object"        # For file lists next to the input set configurations
+    reviewLinks:      "Review Snapshots"       # Lists all review snapshot links
+    workflow:         "Workflow"               # Views an experiment workflow
+    configuration:    "Configuration"          # Views the experiment's configurations
+    allWork:          "All Work"               # Listing of all past runs/jobs
+    pages:            "Pages"                  # Lists pages in a paper for editing
+    openFromWorkset:  "Open From Workset"      # Data viewer section to browse worksets for datasets
+    members:          "Members"                # Memberships Listing (for members of a group)
+    memberOf:         "A Member Of"            # Memberships Listing (for what groups they belong to)
+
+  object-selection:
+    selectObject:     "Select Object"          # Object Selection widget
+    selectWorkflow:   "Select Workflow"        # Workflow Selection widget
+    recentlyUsed:     "Recently Used Objects"  # Recently used list
+    using:            "Using"                  # Object Viewer "Using {X}" indicator
+    running:          "Running with"           # For selecting what emulator/object to run
+    openOptions:      "Open Options"           # Object Viewer open options section
+    closeOptions:     "Close Options"          # Object Viewer close options section
+    filters:          "Filters"                # Filters section
+    filter:
+      name:           "Name"                   # Filtering by object name
+      type:           "Type"                   # Filtering by object type
+      tag:            "Tag"                    # Filtering by object tag
+      views:          "Views"                  # Filtering by what the object views
+      provides:       "Provides"               # Filtering by what yields a certain environment
+
+  # Social component's elements
+  social:
+    deleted:        "deleted"                # Denoting a deleted comment
+    last_edited:    "last edited"            # Denoting there was an edit some time ago
+    show_more:      "Show %{count} more replies..." # Show more comments
+    post_anon:      "Post Anonymously"       # Checkbox for posting anon.
+    anonymous:      "anonymous"              # Name for anonymous postings
+    posted:         "posted"                 # Verb for comment headers
+    reply:          "Reply"                  # Reply link/button
+    edit:           "Edit"                   # Edit link/button
+    delete:         "Delete"                 # Delete button for commenters/moderators
+
+  # Subsubheaders (h2,h3) within the page
+  subsubheaders:
+    uuid:             "UUID"                   # UUID field                  (metadata)
+    revision:         "Revision"               # Revision field              (metadata)
+    within:           "Within"                 # What object owns this one   (metadata)
+    authors:          "Authors"                # Authors field               (metadata)
+    includes:         "Includes"               # What this object includes within itself
+    collaborators:    "Collaborators"          # Collaborators field         (metadata)
+    website:          "Website"                # Website field               (metadata)
+    history:          "History"                # History (revisions)         (metadata)
+    currentRevision:  "current"                # Within history field        (metadata)
+    source:           "Source"                 # Original source of object   (metadata)
+    link:             "Link"                   # Link to actual data object  (metadata)
+    clonedFrom:       "Cloned From"            # Points to original object   (metadata)
+    generator:        "Generator"              # Points to creator object    (metadata)
+    configures:       "Configures"             # What object this configures (metadata)
+    views:            "Views"                  # What types this can view    (metadata)
+    configuration:    "Configuration"          # Lists configurations        (metadata)
+    widgets:          "Widgets"                # Lists configuration widgets (metadata)
+    environment:      "Environment"            # Environment object runs in  (metadata)
+    architecture:     "Architecture"           # Archtecture object runs on  (metadata)
+    provides:         "Provides"               # What object provides for VM (metadata)
+    inputs:           "Inputs"                 # What object takes as input  (metadata)
+    outputs:          "Outputs"                # What object creates         (metadata)
+    license:          "License"                # Object source code license  (metadata)
+    script:           "Script"                 # The script to run           (metadata)
+    command:          "Command"                # The command to run          (metadata)
+    language:         "Language"               # Programming language        (metadata)
+    dependencies:     "Dependencies"           # Dependency list             (metadata)
+    perma-link:       "URL"                    # URL of the page             (metadata)
+    short-link:       "Short Link"             # URL of the page (shortened) (metadata)
+    embed-link:       "Embed Link"             # Link for embedding the page (metadata)
+    qrcode:           "QR Code"                # QR Code for the object      (metadata)
+    rss-link:         "RSS Link"               # Link for accessing the RSS feed
+    other-keys:       "Other Attribute"        #
+
+    run:
+      submitted:      "Submitted"              # Job Queue submitted time
+      progress:       "Progress"               # Job progress
+
+    citation:
+      type:           "Type"                   # Citation type (article, etc)
+      title:          "Title"                  # Citation title
+      author:         "Author"                 # Citation author(s)
+      journal:        "Journal"                # Citation journal
+      year:           "Year"                   # Citation publication year
+      month:          "Month"                  # Citation publication month
+      issn:           "ISSN"                   # Citation publication ISSN
+
+    builds:
+      host:           "Host"                   # Host machine for the build
+      time:           "Time"                   # Time elapsed during build
+      date:           "Date"                   # Date build started
+      result:         "Result"                 # Success flag for build
+      backend:        "Backend"                # Native backend used for build
+
+  # Badges are attributes of objects
+  badges:
+    trusted:          "Trusted"
+
+  # Flash text and informative text
+  flash:
+    reviewer:         "This is a reviewer snapshot. Authorship information has been removed."
+    snapshot:         "This is a snapshot of this workset as it looked in the past."
+    recent:           "Go to the most recent version"
+    saving:           "Currently saving..."
+    error:            "Error. Not saved."
+
+  # Object Information and Actions
+  information:
+    private:          "private"                # Private access text   (sidebar)
+    public:           "public"                 # Public access text    (sidebar)
+    bookmark:         "bookmark"               # Bookmark object link  (sidebar)
+    removeBookmark:   "remove bookmark"        # Undo bookmark link    (sidebar)
+    fork:             "fork"                   # Fork action link      (sidebar)
+    collaborators:    "collaborators"          # Collaborator count    (sidebar/info)
+    trust:            "trust"                  # Action: trust this object (sidebar)
+    removeTrust:      "remove trust"           # Action: revoke trust  (sidebar)
+    trusted:          "trusted"                # System-wide trusted   (sidebar)
+    untrusted:        "untrusted"              # System-wide untrusted (sidebar)
+
+  # Alt-text for images and graphical links
+  alt-text:
+    help:             "help"                   # Help bubble alt-text
+    up:               "up"                     # Up button (to move pages up and down in order)
+    down:             "down"                   # Down button (again, to move the order of pages)
+    remove:           "remove"                 # To remove a page, experiment, etc from its parent
+    previous:         "previous"               # Previous page (pagination, etc)
+    next:             "next"                   # Next page (pagination, etc)
+    first:            "first"                  # First page (pagination, etc)
+    last:             "last"                   # Last page (pagination, etc)
+    fullScreen:       "full screen"            # Runs browser object fullscreen. (object runner bar)
+
+  tooltips:
+    copy:             "copy to clipboard"      # Copy to clipboard
+    edit:             "edit"                   # Edit attribute
+
+  # Common text for various situations
+  common:
+    none:             "None"                   # When no elements exist
+    save:             "Save"                   # Saves the form
+    copy:             "Copy"                   # Copy to clipboard
+    update:           "Update"                 # Updates the object
+    within:           "within"                 # 'X' within 'Y'
+    generate:         "generate"               # To create new content dynamically
+
+    download:         "download"               # Download links
+    upload:           "Upload"                 # Upload button
+
+    schema:           "schema"                 # For getting object output schema
+    view:             "view"                   # For viewing object data
+    attach:           "attach"                 # For attaching objects
+
+    noSession: >                               # When no account it logged in.
+      You are not currently logged in.
+    noSessionWorksets: >
+      Log in to view a list of your worksets.
+    noOutput:         "No output."             # When no object outputs
+    noBuilds:         "No builds."             # When no known builds of an object are available
+    noWorksets:       "They have no worksets." # When a person has no worksets
+    noWorksetsYou:    "You have no worksets."  # When YOU don't have any worksets
+    noJobs:           "No recent work."        # When there are no recent/running jobs.
+    noBookmarks:      "No bookmarks."          # When you don't have any bookmarks.
+    noNodes: >                                 # No nodes in workflow
+      There are no workflow nodes.
+    noNodesYou: >                              # No nodes in workflow (and this is your experiment)
+      There are no workflow nodes.
+      Please add one above to see a list of
+      configuration options for that tool.
+
+    build:            "Build Object"           # Build Object button/link
+    enqueue:          "Queue"                  # Queue Run button/link
+    run:              "Run"                    # Run object button/link
+    showJobs:         "Show all runs..."       # Go to all runs link
+    archive:          "archive"                # Archive run/job link
+    cancel:           "cancel"                 # Cancel run/job link
+
+    editProfile:      "Edit Profile"           # Edit a person's bio, etc
+    editDescription:  "Edit Description"       # Edit an object's description, etc
+
+    sharableLink:     "Sharable Link"          # Review link
+
+  # Links on the topbar or footer
+  navigation:
+    login:            "Login"                  # Topbar Login link
+    signup:           "Signup"                 # Topbar Signup link
+    logout:           "Logout"                 # Topbar Logout link
+    search:           "Search"                 # Topbar Search link
+    about:            "About"                  # Footer About link
+    acknowledgements: "Acknowledgements"       # Footer Credits link
+    system:           "System"                 # Footer System link
+    code:             "Code"                   # Footer Code link
+    documentation:    "Documentation"          # Footer Documentation link
+    admin:            "Administration"         # Footer Administration link
+
+  # Form fields
+  fields:
+    username:         "username"               # Username field for log in/sign up
+    password:         "password"               # Password field for log in/sign up
+
+    addReviewLink:    "Create Review Link for This Revision" # New Review Link
+    addFiles:         "Add Files"              # File upload header
+    addNewGroup:      "Add New Group"          # When adding a group or directory
+    addNewObject:     "Add a New Object"       # When creating stuff within a workset/group
+    addWorkset:       "New Workset"            # When creating a workset
+    addNewPage:       "Add a New Page"         # When creating pages
+    addNewGroup:      "Add a New Group"        # When creating Person/organization objects
+
+    add:              "add"                    # Add new thing button/link
+    remove:           "remove"                 # Remove the thing button/link
+    submit:           "submit"                 # Submit comment button/link
+
+    signin:           "Sign In"                # Sign in button/link
+    signup:           "Sign Up"                # Sign up button/link
+
+    placeholders:
+      name:           "name"                   # Label for name of new object etc
+      username:       "username"               # Label for field requesting a username
+      search:         "search"                 # Label for a search field
+      selectObject:   "select object"          # Label for object selection
+      filterByTag:    "filter by tag"          # Label for object selection tag filter
+      filterByType:   "filter by type"         # Label for object selection type filter
+      comment:        "Comment for this object" # Placeholder for comments
+
+  # /admin page elements
+  admin:
+    moderation:
+      header:         "Moderation"             # Subheader for listing moderation options
+      objects:        "Moderate Objects"       # Option for object moderation
+      accounts:       "Moderate Accounts"      # Option for account moderation
+    pendingAccounts:
+      header:         "Pending Accounts"       # Subheader for listing pending accounts
+      activate:       "Activate"               # Activate button text
+      delete:         "Delete"                 # Delete button text
+    pendingObjects:
+      header:         "Pending Objects"        # Subheader for listing pending objects
+      activate:       "Activate"               # Activate button text
+      delete:         "Delete"                 # Delete button text
+    security:
+      header:         "Security"               # Subheader for listing security options
+      trustObject:    "Trust System-wide"      # Default trust for this object
+    delete:
+      header:         "Delete"                 # Object Deletion Subheader
+      confirmDeleteObject: "Confirm Delete"    # Second-chance trigger label
+      deleteObject:   "Delete Object"          # Deletes the object permanently
+
+
+  # Paper editing and viewing support
+  paper:
+    addComponent:     "Add Component"          # Label for the selection of a component to add
+    add:              "Add"                    # Add component button/link
+
+    # Component Types:
+    paragraph:        "paragraph"              # Paragraph component (block of text)
+    header:           "header"                 # Header component (h2)
+    subheader:        "subheader"              # Subheader component (h3)
+    image:            "image"                  # Image component (img)
+    widget:           "widget"                 # Interactive widget object
+    page:             "page"                   # A whole page
+
+    defaultParagraph: >                        # Default text for a new paragraph widget
+      Double-click to edit paragraph text.
+
+    defaultWidgetHeader: >                     # Default text for a new widget
+      Unloaded Widget
+    defaultWidget: >
+      Open up the configuration for this element to choose an object or widget to embed here.
+
+  # For translating common object types
+  objectTypes:
+    workset:          "workset"                # Workset Objects
+    experiment:       "experiment"             # Experiment Objects
+    group:            "group"                  # Group objects
+    paper:            "paper"                  # Paper objects
+    volume:           "volume"                 # Volume objects
+    object:           "object"                 # Generic objects
+    person:           "person"                 # An Actor within the system
+    organization:     "organization"           # Actors within the system
+
+  # Help messages (in markdown)
+  help:
+    error: |
+      We have hit an unexpected issue on our end. We apologize for the inconvenience.
+    notFound: |
+      We are unable to find the page you requested. If you believe this is an error, please contact us.
+    run: |
+      You can run this object here by clicking on the Queue button below. Whenever there is an open slot available, the application will start and you will see a log of the progress. The application will present either a terminal or a video stream depending on what type of application it is.
+
+    output: |
+      This list shows all of the items this object created as output. You may also inspect the provenance of any output by clicking 'history'. Some output objects can be downloaded and others may be viewed.
+
+    worksets: |
+      **Experiments** are any run of a workload. You can devise a workflow and set up input
+      parameters as part of an Experiment. To create one, first create a workset below.
+
+      **Worksets** are a collection of Experiments that may be organized into Groups.
+      When you have created a workset, navigate to that workset from this page. From there,
+      you can add Experiments and Groups to this workset.
+
+    directory: |
+      To begin, you'll want to create an **Experiment**. An Experiment allows you to select and configure tools to run on a machine. Select "experiment" and type in a name to identify it and click "add" and it will take you to a page where you can start playing.
+
+    reviewLinks: |
+      A **review snapshot** will yield a link that you can share (regardless of whether or not the workset is marked private) which will
+      allow a person to view a version of the workset without authorship information. This snapshot cannot be forked and will be
+      established at the current revision without any ability to browse workset or experiment history.
+
+    workflow: |
+      A **workflow** describes how a collection of objects interact. Generally, it denotes a path from some input to some eventual result. For instance, you can describe a flow from a benchmark to a simulator. To do this, you would first attach a simulator. At that point, it will show you the possible input objects you can attach. You can select a benchmark on the left-hand side and all runs will use that benchmark with the given simulator.
+
+    configuration: |
+      Use ranged and listed options to create a set of experiments.
+
+      Type `1, 2, 8` in a field to say you wish to run a separate experiment for each of the listed options.
+
+      Type `1 ... 4` in a field to sweep an option and create an experiment for each valid value in that range.
+
+      If you would like to created a range with a step, use the following syntax to add a mathematical function to update the next value based on the previous value. For instance, for a range that represents all even values use\:
+      `0 ... 20 : x+2` and it will step every 2 values.
+
+      You can express other complex values like so\:
+      `1 ... 20: x*2` for powers of two\: 1, 2, 4, 8, 16.
+
+      Notice that `x` in each example will be the previous value before generating the next until x is greater than the bounds of the range. In this case, `20`.
+
+      You may combine these into a variety of ways. For example: `1 ... 9 : x+3, 21, 121` will create experiments for `1`, `4`, `7`, `21`, and `121`.
+
+      All permutations of configurations will result in new experiment runs.
+
+    admin:
+      moderation: |
+        This section moderates account creation and establishes whether or not arbitrary
+        people or systems can install objects on the system. If objects are moderated,
+        for instance, somebody can import a simulator object, but only when an adminstrator
+        authorizes it via this page will it actually be compiled, installed, and thus available
+        to others.
+      pendingAccounts: |
+        This section lists accounts which were created but not yet active.
+        These people cannot log into the system until you press the Activate button.
+      pendingObjects: |
+        This section lists pending objects requested by people on this system.
+        Only when you press the activate button will an object actually be
+        available to be built, placed on the filesystem, and thus able to
+        be used.
+      security: |
+        This section lists options that affect the security related to this object on the
+        system. When **Trust System-wide** is applied, the object may have extra privileges
+        when executed on a person's own machine. System-wide trust is stronger than a
+        single account's trust of an object. It applies to privileges on the server as well
+        as client. The specific privileges are based on the object.
+
+    citation: |
+      This section provides generated citations that are appropriate for this artifact.
+      Sometimes, the citation is a paper or other artifact hosted elsewhere, but the
+      authors of this artifact requested that be cited instead of the software itself.
+
+      Otherwise, the citation reflects this artifact and also has a tag for the
+      revision (which represents this object at this specific point in time) which is
+      enough to return to this, or a similar, page.
+
+    pages: |
+      Here, you can add or remove **pages** which are areas where you can add
+      text, images, and embeddable widgets (such as plots or visualizations)
+      which use data from past experiments.
+
+      Just add a page and click on that page to continue. When you can edit
+      the page, bubbles will appear to allow you to add new widgets or
+      configure/edit the existing ones. Double-clicking on header or paragraph
+      text will allow you to edit that text. Delete all of the text to remove
+      the header, subheader, or paragraph from the page.
+
+    workflowSelectionEmpty:
+      Add a new node for input within the editor. When you do so, this panel will
+      allow you to search for an object to use. It will give you the opportunity to
+      use objects you have recently used and search using filters for exactly the
+      object you want.

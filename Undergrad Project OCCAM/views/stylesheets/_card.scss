@@ -1,0 +1,218 @@
+/* This file has the styling for "card" divs, which are the main content
+ * wielding sections of the page.
+ */
+
+@charset "UTF-8";
+
+// Centered content
+.content .card {
+  > .centered {
+    padding-left:  $content-padding;
+    padding-right: $content-padding;
+
+    @media #{$media-fit} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.content > .tab-panels {
+  position: relative;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content > .tab-panels > .tab-panel {
+  flex: 1 0 auto;
+  flex-direction: column;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.content > .tab-panels > .tab-panel > .card {
+  &:last-child {
+    flex: 1 0 auto;
+  }
+
+  > .information ,
+  > .centered ,
+  > form ,
+  > h2, > h3 {
+    padding-left:  $content-padding;
+    padding-right: $content-padding;
+
+    @media #{$media-fit} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.content > .tab-panels > .tab-panel > .card ,
+.content > .card ,
+.content > .tab-panels > .tab-panel > form ,
+.content > form {
+  margin-top: 2px;
+}
+
+.content .card {
+  background-color: $card-bg;
+  padding: 20px 20px;
+  position: relative;
+
+  /* Filled cards have content that go right to the edge */
+  &.filled {
+    padding: 0;
+
+    > .container > h2 ,
+    .tab-panel > h2 {
+      padding: 20px;
+      padding-bottom: 10px;
+    }
+
+    > h2 {
+      padding-top: 20px;
+    }
+
+    > iframe {
+      padding: 0;
+    }
+
+    > .img img {
+      max-width: 100%;
+    }
+
+    &.collapsable.collapsed > h2 {
+      padding-bottom: 20px;
+    }
+  }
+
+  /* Card Headers */
+  > .container > h2 ,
+  > h2 {
+    color: $sub-header-color;
+  }
+
+  h3 {
+    color: hsl(190, 30%, 35%);
+  }
+
+  .content > .card > ul {
+    font-family: "Open Sans", sans;
+    font-size:   14px;
+    font-weight: 200;
+    line-height: 1.2em;
+    margin:      0;
+  }
+}
+
+.content .none {
+  width: 300px;
+  height: 300px;
+
+  padding: 0;
+  padding-top: 100px;
+  margin: 0 auto;
+
+  .none-icon {
+    background-image: url('/images/ui/no-result.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .none-icon[data-none-category=bookmarks] {
+    background-image: url('/images/ui/no-bookmark.svg');
+  }
+
+  .none-icon[data-none-category=output] {
+    background-image: url('/images/ui/no-output.svg');
+  }
+
+  p {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+/* The copy to clipboard links */
+.content a.copy {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url('/images/ui/copy.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px;
+
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+// 1980
+.content a.edit {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url('/images/ui/edit.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px;
+
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.content input.delete.link {
+  background-image: url('/images/remove_item.svg');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 50% 50%;
+
+  // The reset css doesn't seem to reset the box-sizing attribute
+
+  box-sizing: content-box;
+  vertical-align: middle;
+
+  position: relative;
+  top: 0px;
+
+  background-color: $delete-link-bg;
+
+  border: 2px solid darken(desaturate($delete-link-bg, 50%), 10%);
+  border-radius: 10px;
+
+  width: 12px;
+  height: 12px;
+
+  overflow: hidden;
+  text-indent: -9999px;
+
+  @keyframes hover-delete-link {
+    0% {
+      background-color: $delete-link-bg;
+    }
+    100% {
+      background-color: hsla(0, 100%, 82%, 1);
+    }
+  }
+
+  &:hover {
+    animation: hover-delete-link 0.7s;
+    background-color: hsla(0, 100%, 82%, 1);
+  }
+}

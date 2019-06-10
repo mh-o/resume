@@ -1,0 +1,167 @@
+- links = false if not defined?(links)
+- checkboxes = false if not defined?(checkboxes)
+- form_prefix = "" if not defined?(form_prefix)
+- selected_paths = [] if not defined?(selected_paths)
+- files = nil if not defined?(files)
+- header = nil if not defined?(header)
+- path = object.path if not defined?(path)
+
+- if not object.isGroup?(object.path)
+  - path = File.dirname(object.path)
+
+- if path.nil?
+  - path = "/"
+
+%table.file-listing{:class => files.nil? ? "" : "input-sets"}
+
+  %form{:action => "#{object.url}/files/", :method => "post", :enctype => "multipart/form-data"}
+    %input{:id => :fileToUpload, :name => :fileToUpload, :type => "file"}
+    %input{:name => :submit, :type => "submit", :value => "Upload"}
+
+  - if not files.nil?
+    %tr.row.header{:hidden => true}
+      %td{:colspan => "999"}
+        = I18n.t('subheaders.inputSet')
+    - files.each_with_index do |paths, group_index|
+      - group_base64_id = Base64.urlsafe_encode64(group_index.to_s)
+      %tr.row.header
+        %td{:colspan => "999"}
+          - name = "to_#{form_prefix}[#{group_base64_id}]"
+          %input{:type => :hidden, :name => name, :value => "false"}
+          %input.checkbox{:type => :checkbox, :name => name, :checked => false}
+          %span.name
+            = I18n.t('subheaders.inputSet') % group_index.to_s
+      - paths.each do |file_path|
+        %tr.row.file{:class => [object.fileType(path + "/" + file_path).split('/').map{|type| "mime-#{type}"}.join(' ')]}
+          - if checkboxes
+            %td.checkbox
+              - base64_id = Base64.urlsafe_encode64(file_path)
+              - name = "in_#{form_prefix}[#{group_base64_id}][#{base64_id}]"
+              %input{:type => :hidden, :name => name, :value => "false"}
+              %input.checkbox{:type => :checkbox, :name => name, :checked => true}
+          %td.name.truncate
+            #{file_path}
+    %tr.row.header
+      %td{:colspan => "999"}
+        - base64_id = Base64.urlsafe_encode64(files.length.to_s)
+        - name = "to_#{form_prefix}[#{base64_id}]"
+        %input{:type => :hidden, :name => name, :value => "false"}
+        %input.checkbox{:type => :checkbox, :name => name, :checked => false}
+        %span.name
+          = I18n.t('subheaders.newInputSet')
+  - else
+    - if header
+      %tr.row.header
+        %td{:colspan => "999"}
+          %span.name
+            #{header}
+    -# Add link to parent directory (..)
+    - unless path.nil? || path == "" || path == "/"
+      %tr.row.group
+        - size = to_friendly_filesize(0)
+        %td.size.value
+          #{size[:value]}
+        %td.size.units
+          #{size[:units]}
+        %td.name{:colspan => "999"}
+          - if links
+            - if path && path.include?('/')
+              %a{:href => object.url(:path => "files/#{path}/..")}
+                \..
+            - else
+              %a{:href => object.url(:path => "files")}
+                \..
+          - else
+            \..
+    - object.eachFile(path, :order => :group, :all => true) do |info|
+      %tr.row{:class => [(info[:type] == "tree" ? "group" : "file"), info[:mime][0].split('/').map{|type| "mime-#{type}"}.join(' ')]}
+        - if checkboxes
+          %td.checkbox
+            - if info[:type] != "tree"
+              - file_path = "#{path && path.length > 1 ? "#{path}/" : ""}#{info[:name]}"
+              - base64_id = Base64.urlsafe_encode64(file_path)
+              - name = "#{form_prefix}[#{base64_id}]"
+              %input{:type => :hidden, :name => name, :value => "false"}
+              %input.checkbox{:type => :checkbox, :name => name, :checked => false}
+        - size = to_friendly_filesize(info[:size] || 0)
+        %td.size.value
+          #{size[:value]}
+        %td.size.units
+          #{size[:units]}
+        %td.name.truncate{:colspan => info[:from] ? false : "2"}
+          - if links
+            %a{:href => object.url(:path => "files/#{path && path.length > 1 ? "#{path}/" : ""}#{info[:name]}", :full => true)}<>
+              #{info[:name]}
+          - else
+            #{info[:name]}
+        - if info[:from]
+          %td.revision.truncate
+            %span.revision
+              @#{info[:from][:revision]}
+        - if links
+          %td.actions
+            - if info[:type] != "tree"
+              %a.download{:href => object.url(:path => "raw/#{path && path.length > 1 ? "#{path}/" : ""}#{info[:name]}", :full => true), :alt => I18n.t('common.download'), :title => I18n.t('common.download')}
+                = I18n.t 'common.download'
+    - (object.info[:install] || []).each do |install|
+      - if install['type'] == "file" || install['type'] == "application/zip"
+        %tr.row.file{:class => [object.fileType(path + "/" + install[:to]).split('/').map{|type| "mime-#{type}"}.join(' ')]}
+          - size = to_friendly_filesize(0)
+          %td.size.value
+            #{size[:value]}
+          %td.size.units
+            #{size[:units]}
+          %td.name.truncate
+            - if links
+              %a{:href => "/objects/#{install['id']}/#{install['revision']}/files"}<
+                #{install['to'] || 'package'}
+            - else
+              #{install['to'] || 'package'}
+          %td.revision.truncate
+            %span.revision
+              @#{install['revision']}
+          %td.actions
+        - if install['type'] == "application/zip" && install['actions'].is_a?(Hash) && (install['actions'] || {}).has_key?('unpack')
+          - resourceObject = Occam::Object.where(:uid => install['id']).first
+          - if resourceObject
+            - resourceObject.revision = install['revision']
+            - resourceObject.eachFile(path, :order => :group) do |info|
+              %tr.row{:class => [(info[:type] == "tree" ? "group" : "file"), resourceObject.fileType(info[:name]).split('/').map{|type| "mime-#{type}"}.join(' ')]}
+                - size = to_friendly_filesize(info[:size] || 0)
+                %td.size.value
+                  #{size[:value]}
+                %td.size.units
+                  #{size[:units]}
+                %td.name.truncate
+                  - if links
+                    %a{:href => resourceObject.url(:path => "files/#{path && path.length > 1 ? "#{path}/" : ""}#{info[:name]}", :full => true)}
+                      #{info[:name]}
+                  - else
+                    #{info[:name]}
+                %td.revision.truncate
+                  %span.revision
+                    @#{install['revision']}
+                - if links
+                  %td.actions
+                    - if info[:type] != "tree"
+                      %a.download{:href => resourceObject.url(:path => "raw/#{path && path.length > 1 ? "#{path}/" : ""}#{info[:name]}", :full => true), :alt => I18n.t('common.download'), :title => I18n.t('common.download')}
+                        = I18n.t 'common.download'
+    -# Add file resources
+    - if defined?(workset) and workset and workset.can_edit?(current_person)
+      - if object.fileIsGroup?(path)
+        %table.directory.information
+          %tr.header
+            %td{:colspan => "999"}
+              = I18n.t 'fields.addFiles'
+          %tr.row.add.group
+            %td{:colspan => "999"}
+              %span.input
+                %form{:action => object.url(:path => "/files/#{path}", :full => true), :method => :post}
+                  %input{:type => :input, :name => "directory_name"}
+                  %input.button{:type => :submit, :value => I18n.t('fields.addNewGroup')}
+          %tr.row.add.upload
+            %td{:colspan => "999"}
+              %span.input
+                %form{:action => object.url(:path => "/files/#{path}", :full => true), :method => :post, :enctype=>"multipart/form-data"}
+                  %input.file{:type => :file, :name => 'files[]', :multiple => true}
+                  %input.button{:type => :submit, :value => I18n.t('common.upload')}

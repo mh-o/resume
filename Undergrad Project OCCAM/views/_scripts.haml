@@ -1,0 +1,187 @@
+%script{:src=>"/js/jquery/jquery.min.js"}
+%script{:src=>"/js/d3/d3.min.js"}
+%script{:src=>"/js/jquery/jquery-ui-1.10.4.custom.min.js"}
+%script{:src=>"/js/perfect-scrollbar/perfect-scrollbar.jquery.js"}
+%script{:src=>"/js/jquery.base64.min.js"}
+%script{:src=>"/js/jquery.searchlight.js"}
+%script{:src=>"/js/jquery.appear.js"}
+%script{:src=>"/js/jquery-textfill-master/source/jquery.textfill.min.js"}
+%script{:src=>"/js/tagit/tag-it.min.js"}
+-# Maybe we should lazy-load these
+%script{:type => "text/javascript", :src=>"/js/parsley/parsley.min.js"}
+%script{:type => "text/javascript", :src=>"/js/spectrum/spectrum.js"}
+%script{:type => "text/javascript", :src=>"/js/uuid.js"}
+%script{:type => "text/javascript", :src=>"/js/app.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/navigation_state.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/card.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/importer.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/dropdown.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/selector.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/directory.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/file_list.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/auto_complete.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/workflow.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/object.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/validator.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/vt100.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/websocket.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/terminal.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/tabs.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/data_viewer.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/run_viewer.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/job.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/run_topbar.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/runner.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/configuration.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/configurator.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/paper.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/run_list.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/object_tree.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/tooltip.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/modal.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/social.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/help.js"}
+%script{:type => "text/javascript", :src=>"/js/occam/permissions.js"}
+%script{:type => "text/javascript", :src=>"/js/lightbox2-master/dist/js/lightbox.min.js"}
+%script{:src => "/js/workflow-widget/workflow.js",  :type => "application/javascript"}
+-#
+  %script{:type => "text/javascript", :src=>"/js/codemirror/lib/codemirror.js"}
+  %script{:type => "text/javascript", :src=>"/js/codemirror/keymap/vim.js"}
+  %script{:type => "text/javascript", :src=>"/js/codemirror/keymap/emacs.js"}
+
+  %script{:type => "text/javascript", :src=>"/js/codemirror/addon/mode/simple.js"}
+  %script{:type => "text/javascript", :src=>"/js/codemirror/keymap/sublime.js"}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/apl/apl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/asciiarmor/asciiarmor.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/asn.1/asn.1.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/asterisk/asterisk.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/brainfuck/brainfuck.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/clike/clike.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/clojure/clojure.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/cmake/cmake.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/cobol/cobol.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/coffeescript/coffeescript.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/commonlisp/commonlisp.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/crystal/crystal.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/css/css.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/cypher/cypher.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/d/d.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/dart/dart.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/diff/diff.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/django/django.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/dockerfile/dockerfile.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/dtd/dtd.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/dylan/dylan.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ebnf/ebnf.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ecl/ecl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/eiffel/eiffel.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/elm/elm.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/erlang/erlang.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/factor/factor.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/fcl/fcl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/forth/forth.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/fortran/fortran.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/gas/gas.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/gfm/gfm.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/gherkin/gherkin.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/go/go.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/groovy/groovy.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/haml/haml.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/handlebars/handlebars.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/haskell/haskell.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/haskell-literate/haskell-literate.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/haxe/haxe.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/htmlembedded/htmlembedded.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/htmlmixed/htmlmixed.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/http/http.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/idl/idl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/javascript/javascript.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/jinja2/jinja2.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/jsx/jsx.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/julia/julia.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/livescript/livescript.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/lua/lua.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/markdown/markdown.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mathematica/mathematica.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mbox/mbox.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/meta.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mirc/mirc.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mllike/mllike.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/modelica/modelica.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mscgen/mscgen.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/mumps/mumps.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/nginx/nginx.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/nsis/nsis.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ntriples/ntriples.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/octave/octave.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/oz/oz.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/pascal/pascal.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/pegjs/pegjs.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/perl/perl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/php/php.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/pig/pig.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/powershell/powershell.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/properties/properties.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/protobuf/protobuf.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/pug/pug.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/puppet/puppet.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/python/python.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/q/q.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/r/r.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/rpm/rpm.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/rst/rst.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ruby/ruby.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/rust/rust.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/sas/sas.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/sass/sass.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/scheme/scheme.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/shell/shell.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/sieve/sieve.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/slim/slim.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/smalltalk/smalltalk.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/smarty/smarty.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/solr/solr.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/soy/soy.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/sparql/sparql.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/spreadsheet/spreadsheet.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/sql/sql.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/stex/stex.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/stylus/stylus.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/swift/swift.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/tcl/tcl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/textile/textile.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/tiddlywiki/tiddlywiki.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/tiki/tiki.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/toml/toml.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/tornado/tornado.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/troff/troff.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ttcn/ttcn.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/ttcn-cfg/ttcn-cfg.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/turtle/turtle.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/twig/twig.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/vb/vb.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/vbscript/vbscript.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/velocity/velocity.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/verilog/verilog.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/vhdl/vhdl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/vue/vue.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/webidl/webidl.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/xml/xml.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/xquery/xquery.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/yacas/yacas.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/yaml/yaml.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js'}
+  %script{:type => 'text/javascript', :src => '/js/codemirror/mode/z80/z80.js'}
+
+%script{:type => 'text/javascript', :src => '/js/ace/build/src/ace.js'}
+%script{:type => 'text/javascript', :src => '/js/ace/build/src/ext-modelist.js'}
+
+%script{:src => "/js/editor-widget/occam_editor.js",  :type => "application/javascript"}
+%script{:src => "/js/editor-widget/codemirror_editor.js",  :type => "application/javascript"}
+%script{:src => "/js/editor-widget/ace_editor.js",  :type => "application/javascript"}
+
+// 1980
+%script{:src => "/js/object_edit.js"}
+%script{:src => "/js/drag_drop.js"}
+
+= yield_content :scripts
