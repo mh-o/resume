@@ -1,3 +1,5 @@
+## This isn't a true fork of QUACC, since I've made a new account for post-grad which doesn't have permissions. No major changes have been pushed in the past 6 months however. This was largely a team effort so my indivual contributions are focused within dockerization and litecoin.
+
 # cryptoquality
 A Cryptocurrency code quality analyzer  
 
