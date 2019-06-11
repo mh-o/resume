@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ DELETE CHAT ROOM{% endblock %}
+
+{% block body %}
+  <div class="w3-panel w3-blue">
+    <h2>Delete chat room - Are you sure?</h1>
+  </div>
+
+  <p>Are you sure you wish to delete the chat room " {{ roomToDelete }} {{ roomNum }}"?</p>
+  <form action="" method="post">
+    <input type="submit" value="I'm Sure" />
+  </form>
+  <p>If not, return to your profile <a href="{{ url_for("profile") }}">here</a></p>
+
+{% endblock %}

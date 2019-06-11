@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ NEW CHAT ROOM{% endblock %}
+
+{% block body %}
+
+  {% if curRoomCreated == 1 %}
+    <div class="w3-panel w3-green">
+      <h4>Chat room created successfully!.</h4>
+      <p>Create another chat room below, or click <a href="{{ url_for("profile") }}">here</a> to return to your profile.</p>
+    </div>
+  {% endif %}
+
+  <form action="" method="post">
+    Chat Room Name: <input type="text" name="formRoomName" /><br />
+    <input type="submit" value="Create Chat Room" />
+  </form>
+
+{% endblock %}

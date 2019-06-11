@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ MY PROFILE{% endblock %}
+
+{% block body %}
+  <div class="w3-panel w3-blue">
+    <h2>Welcome to your CHAT+ profile!</h1>
+  </div>
+
+  {% if curRoomDeleted == 1 %}
+    <div class="w3-panel w3-green">
+      <h4>Chat room deleted successfully!.</h4>
+    </div>
+  {% endif %}
+
+  <div class="w3-panel w3-pale-blue w3-border-left w3-border-blue">
+    <h4>Current active chat rooms:</h4>
+  </div>
+
+  <ul>
+    {% for i in curChatRooms %}
+      <li>
+        {{ i.roomName }}
+        <a href="{{ url_for("room", id = i.chatroom_id) }}"> Enter</a>
+        {% if i.roomUser == curUserName %}
+          <a href="{{ url_for("deleteRoom", roomToDelete = i.roomName, roomNum = i.chatroom_id) }}"> Delete</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>Create a new chat room <a href="{{ url_for("createRoom") }}">here</a></p>
+{% endblock %}
