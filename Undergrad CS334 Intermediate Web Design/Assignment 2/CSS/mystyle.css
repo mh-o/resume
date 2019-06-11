@@ -1,0 +1,14 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  color: #08B;
+  border-style: solid;
+  border-width: 2px;
+}
+
+p {
+  color: black;
+}
