@@ -1,0 +1,60 @@
+* {
+  margin: 0; 
+  padding: 0;
+  }
+
+p {
+  background-color: white;
+  padding-left: 10%
+}
+
+div#banner { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-color: #36609B; 
+  width: 100%; 
+}
+
+div#banner-content { 
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0px;
+  border-bottom: 4px solid #2D4F7E;
+}
+
+div#main-content { 
+  padding-top: 100px;
+}
+
+.btn-group button {
+  background-color: #36609B;
+  border: 1px solid #36609B;
+  color: white;
+  padding: 20px 12%;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group button:hover {
+  color: grey
+}
+
+table {
+  padding-left: 10%;
+  padding-top: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+}

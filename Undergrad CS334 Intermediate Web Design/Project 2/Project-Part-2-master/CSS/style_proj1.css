@@ -1,0 +1,93 @@
+* {
+  margin: 0; 
+  padding: 0;
+  }
+
+body {
+  background-image: url(../Images/FullSizeRender.jpg);
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  animation-name: pfade;
+  animation-duration: 6s;
+}
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  animation-name: h1fade;
+  animation-duration: 4s;
+}
+
+h2 {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 100px;
+  text-align: center;
+  animation-name: h2fade;
+  animation-duration: 5s;
+}
+
+div#banner { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  background-color: #36609B; 
+  width: 100%; 
+}
+
+div#banner-content { 
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0px;
+  border-bottom: 4px solid #2D4F7E;
+}
+
+div#main-content { 
+  padding-top: 100px;
+}
+
+.btn-group button {
+  background-color: #36609B;
+  border: 1px solid #36609B;
+  color: white;
+  padding: 20px 12%;
+  cursor: pointer;
+  float: left;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group button:hover {
+  color: grey
+}
+
+@keyframes h1fade {
+  from {background-color: rgba(255, 255, 255, 0.0);}
+  to {background-color: rgba(255, 255, 255, 0.6);}
+}
+
+@keyframes h2fade {
+  from {background-color: rgba(255, 255, 255, 0.0);}
+  to {background-color: rgba(255, 255, 255, 0.7);}
+}
+
+@keyframes pfade {
+  from {background-color: rgba(255, 255, 255, 0.0);}
+  to {background-color: rgba(255, 255, 255, 0.8);}
+}
