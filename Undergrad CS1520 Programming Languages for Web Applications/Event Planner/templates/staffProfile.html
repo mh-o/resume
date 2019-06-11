@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}STAFF PROFILE - {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if username == "owner" %}
+  <a href="{{ url_for("adminPage") }}">click here to make staff profile</a>
+{% endif %}
+
+<div class="w3-panel w3-border-left w3-pale-blue w3-border-blue">
+  <h4>This is your very own profile!</h4>
+</div>
+
+<h3>You are signed up for these events:</h3>
+{% set hasEvent = [] %}
+<ul>
+  {% for e in eventStaff1 %} <!--FOR EACH STAFF MEMBER-->
+    {% if e == username %} <!--IF STAFF MEMBER IS CURRENT USER-->
+      <li>{{ eventStaff1[e] }} on {{ eventDates[eventStaff1[e]] }}</li> <!--PRINT WHAT THEY SIGNED UP FOR-->
+      {% if hasEvent.append(1) %}{% endif %}
+    {% endif %}
+  {% endfor %}
+  {% for e in eventStaff2 %}
+    {% if e == username %}
+      <li>{{ eventStaff2[e] }} on {{ eventDates[eventStaff2[e]] }}</li>
+      {% if hasEvent.append(1) %}{% endif %}
+    {% endif %}
+  {% endfor %}
+  {% for e in eventStaff3 %}
+    {% if e == username %}
+      <li>{{ eventStaff3[e] }} on {{ eventDates[eventStaff3[e]] }}</li>
+      {% if hasEvent.append(1) %}{% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% if not hasEvent %}
+  <div class="w3-panel w3-red">
+    You are not signed up for any events.
+  </div>
+  {% endif %}
+
+</ul>
+
+<h3>You may sign up for these events:</h3>
+
+
+
+<ul>
+  {% for e in eventDates %}
+    <li>{{ e }} on {{ eventDates[e] }} <a href="{{ url_for("staffSignUp", eventName=e, username=username) }}">Work this event.</a></li>
+  {% endfor %}
+
+</ul>
+
+{% endblock %}

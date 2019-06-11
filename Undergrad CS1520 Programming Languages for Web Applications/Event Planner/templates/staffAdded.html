@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}staff added - {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if error %}
+
+<div class="w3-panel w3-border-left w3-pale-red w3-border-red">
+  Failed to add staff member. Check that staff name is unique.
+</div>
+
+{% else %}
+
+<div class="w3-panel w3-border-left w3-pale-green w3-border-green">
+ Staff member has been added!
+</div>
+
+{% endif %}
+
+You may now <a href="{{ url_for("profile", username=username) }}">return to your profile.</a>
+
+{% endblock %}

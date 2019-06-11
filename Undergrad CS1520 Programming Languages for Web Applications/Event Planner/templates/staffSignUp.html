@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}STAFF SIGN UP - {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if flag == 0 %}
+<div class="w3-panel w3-green">
+ You have successfully signed up for this event!
+</div>
+{% elif flag == 1 %}
+
+ There is no more room to sign up.
+
+{% elif flag == 2 %}
+<div class="w3-panel w3-red">
+You are already signed up for this event.
+</div>
+
+{% endif %}
+
+<h5>You may now <a href="{{ url_for("profile", username=username) }}">return to your profile.</a></h5>
+
+ {% endblock %}

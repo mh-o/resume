@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}USER ADDED - {{ super() }}{% endblock %}
+
+{% block body %}
+
+You have successfully created your account! You may now <a href="{{ url_for("logger") }}">log in.</a>
+
+{% endblock %}

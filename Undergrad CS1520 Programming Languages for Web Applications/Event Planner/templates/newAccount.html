@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}NEW ACCOUNT - {{ super() }}{% endblock %}
+
+{% block body %}
+
+Enter your information to create your account:
+<br />
+<br />
+
+<form action="" method="post">
+  Username:  <input type="text" name="newUser" />
+  <br />
+  Password:  <input type="text" name="userPass" />
+  <br />
+  <input type="submit" value="submit" />
+</form>
+
+{% if not username %}
+  <br />
+  Already have an account? <a href="{{ url_for("logger") }}">Log in.</a>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='myStyle.css') }}">
+		<title>{% block title %}CATER+{% endblock %}</title>
+	</head>
+	<body>
+
+		<div class="w3-container">
+		{% if username %}
+			Logged in as {{ username }}, <a href="{{ url_for("unlogger") }}">click here to logout.</a>
+			<br />
+			<br />
+		{% endif %}
+		</div>
+
+		<div class="w3-container">
+
+			{% block body %}
+			{% endblock %}
+
+		</div>
+
+	</body>
+</html>

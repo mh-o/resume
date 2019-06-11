@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}STAFF SIGN UP - {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if error == "yes" %}
+
+  Event not cancelled, are you sure it still exists?
+
+{% else %}
+
+  Event has been cancelled!
+  <br />
+  <br />
+  To return to your profile, click <a href="{{ url_for("profile", username=username) }}">here.</a>
+
+{% endif %}
+
+{% endblock %}

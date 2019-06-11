@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Your profile: {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if username == "owner" %}
+  <a href="{{ url_for("adminPage") }}">Click here to make staff profile.</a>
+
+  {% set hasEvent = [] %}
+  <div class="w3-panel w3-border-left w3-pale-blue w3-border-blue">
+    <h2>List of all events:</h2>
+  </div>
+  <ul>
+    {% for e in eventDates %}
+      {% set myTest = [] %}
+      <li><h4>{{ e }} on {{ eventDates[e] }}</h4></li>
+      {% if hasEvent.append(1) %}
+      {% endif %}
+
+      <ul>
+      {% for s in eventStaff1 %}
+        {% if s != None %}
+          {% if eventStaff1[s] == e %}
+            <li>{{ s }} is signed up to work this event</li>
+            {% if myTest.append(1) %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% for s in eventStaff2 %}
+        {% if s != None %}
+          {% if eventStaff2[s] == e %}
+            <li>{{ s }} is signed up to work this event</li>
+            {% if myTest.append(1) %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% for s in eventStaff3 %}
+        {% if s != None %}
+          {% if eventStaff3[s] == e %}
+            <li>{{ s }} is signed up to work this event</li>
+            {% if myTest.append(1) %}
+            {% endif %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      {% if not myTest %}
+      <div class="w3-panel w3-red">
+          No staff are signed up for this event.
+      </div>
+      {% endif %}
+
+      </ul>
+    {% endfor %}
+  </ul>
+
+  {% if not hasEvent %}
+  <div class="w3-panel w3-red">
+    <h3>Notice!</h3>
+    <p>There are currently no scheduled events.</p>
+  </div>
+  {% endif %}
+
+
+{% else %}
+<div class="w3-panel w3-border-left w3-pale-blue w3-border-blue">
+  <h4>This is your very own profile!</h4>
+</div>
+
+<h3>Request an event:</h3>
+<form action="" method="post">
+  Event name:  <input type="text" name="eventName" />
+  <br />
+  Date:  <input type="date" name="eventDate" />
+  <br />
+  <input type="submit" value="Request Event" />
+</form>
+<div class="w3-panel w3-border-left w3-pale-yellow w3-border-yellow">
+  <h4>You have currently requested the following events:<h4>
+</div>
+
+<ul>
+  {% for h in eventHosts %}
+    {% if eventHosts[h] == username %}
+      <li>{{ h }} on {{ eventDates[h] }} <a href="{{ url_for("cancelEvent", eventName=h) }}">Cancel this event.</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% endif %}
+
+{% endblock %}

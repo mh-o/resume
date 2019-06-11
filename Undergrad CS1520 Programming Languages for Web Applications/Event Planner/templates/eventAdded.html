@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}EVENT ADDED - {{ super() }}{% endblock %}
+
+{% block body %}
+
+{% if error2 == "yes" %}
+<div class="w3-panel w3-border-left w3-pale-red w3-border-red">
+  There was a conflict when trying to process your event. We're already booked that day.
+  Or perhaps your event does not have aunique name? Use descriptive event names to avoid this issue.
+</div>
+  You may return to your <a href="{{ url_for("profile", username=username) }}">profile.</a>
+
+{% else %}
+<div class="w3-panel w3-border-left w3-pale-green w3-border-green">
+  <h5>Event requested! You may now <a href="{{ url_for("profile", username=username) }}">return to your profile.</a></h5>
+</div>
+{% endif %}
+
+
+{% endblock %}

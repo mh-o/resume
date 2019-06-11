@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Log in! - {{ super() }}{% endblock %}
+
+{% block body %}
+	<div class="w3-panel w3-blue">
+		<h1>Welcome to CATER+!</h1>
+	</div>
+
+	<div class="w3-panel w3-border-left w3-pale-blue w3-border-blue">
+		<h4>Please enter your credentials below.</h3>
+	</div>
+
+	<br />
+
+		<form action="" method="post">
+			Username:  <input type="text" name="user" />
+			<br />
+			Password:  <input type="text" name="pass" />
+			<br />
+			<input type="submit" value="submit" />
+		</form>
+
+		{% if not username %}
+			<br />
+			<br />
+			<br />
+			New to the site? <a href="{{ url_for("newAccount") }}">Make an account!</a>
+		{% endif %}
+
+
+{% endblock %}

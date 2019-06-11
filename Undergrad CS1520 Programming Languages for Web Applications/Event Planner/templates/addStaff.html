@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}ADMIN PAGE - {{ super() }}{% endblock %}
+
+{% block body %}
+
+<div class="w3-panel w3-border-left w3-pale-blue w3-border-blue">
+  <h3>Add staff member with the following username/password:</h3>
+</div>
+<br />
+<br />
+
+<form action="" method="post">
+  Username:  <input type="text" name="newStaff" />
+  <br />
+  Password:  <input type="text" name="staffPass" />
+  <br />
+  <input type="submit" value="submit" />
+</form>
+
+{% endblock %}
