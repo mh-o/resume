@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ LOGIN{% endblock %}
+
+{% block body %}
+  <div class="w3-panel w3-blue">
+    <h1>Welcome to CHAT+!</h1>
+  </div>
+
+  {% if curUserNameError == 1 %}
+    <div class="w3-panel w3-red">
+      <h4>No such user exists. Try again or create an account.</h4>
+    </div>
+  {% endif %}
+
+  {% if curPassError == 1 %}
+  <div class="w3-panel w3-red">
+    <h4>Your password was incorrect. Please try again.</h4>
+  </div>
+  {% endif %}
+
+  {% if curLoggedOut == 1 %}
+  <div class="w3-panel w3-green">
+    <h4>You have been successfully logged out.</h4>
+  </div>
+  {% endif %}
+
+  <div class="w3-panel w3-pale-blue w3-border-left w3-border-blue">
+    <h4>Please enter your credentials below.</h4>
+  </div>
+
+  <form action="" method="post">
+    Username: <input type="text" name="formUserName" /><br />
+    Password: <input type="text" name="formPass" /><br />
+    <input type="submit" value="Log In" />
+  </form>
+
+  <p>New to the site? Create an account <a href="{{ url_for("createAccount") }}">here</a></p>
+
+{% endblock %}

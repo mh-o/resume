@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <meta name="cache-control" content="no-cache" />
+    <meta name="expires" content="0" />
+    <meta name="pragma" content="no-cache" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/material.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/mycss.css') }}">
+
+    <script type="text/javascript" src="{{ url_for('static', filename='stylesheets/progressbar.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='stylesheets/material.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='stylesheets/dashboard.js') }}"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <meta charset="UTF-8">
+    <title>MONEY ON MY MIND</title>
+
+
+</head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">MY BUDGET CATEGORIES</span>
+            </div>
+            <div class="mdl-layout__header-row">
+              <h6>Cick "+" below to add a new category.</h6>
+            </div>
+        </header>
+
+        <button class="my-fab mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="z-index: 1000;">
+            <i class="material-icons">add</i>
+        </button>
+
+        <main class="mdl-layout__content">
+
+            <dialog class="mdl-dialog">
+                <h4 class="mdl-dialog__title" style="line-height: 1.20">New Budget Category</h4>
+                <div class="mdl-dialog__content">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*(_|[^\w])).+$" id="new_cat_name_field">
+                        <label class="mdl-textfield__label" for="new_cat_name_field">Category</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" pattern="^[1-9][0-9]*$" id="new_cat_limit_field">
+                        <label class="mdl-textfield__label" for="new_cat_limit_field">Budget Limit</label>
+                        <span class="mdl-textfield__error">Please only input a positive number</span>
+                    </div>
+                </div>
+                <div class="mdl-dialog__actions">
+                    <button id="create_dialog" type="button" class="mdl-button mdl-button--disabled font-blue">Create</button>
+                    <button id="dismiss_dialog" type="button" class="mdl-button close">Cancel</button>
+                </div>
+            </dialog>
+
+
+            <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                <div class="mdl-snackbar__text"></div>
+                <button class="mdl-snackbar__action" type="button"></button>
+            </div>
+
+            <div class="page-content">
+
+
+                <div id="cat_holder" class=" mdl-grid">
+
+                    <div id='card_frame' class="mdl-cell mdl-cell--2-col">
+                        <div class="demo-card-event mdl-card mdl-color--grey mdl-shadow--2dp">
+                            <div class="mdl-card__title mdl-card--expand">
+                                <h4>
+                                    Rent/Utils<br>
+                                <div class="graph_holder"></div>
+                                </h4>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+
+                                <form id="cat_rentUtils" method="get" action="/cats">
+                                    <input class="hidden" type="hidden" name="cat_page" value="rentUtils" />
+                                    <a  class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+                                        Add Purchase
+                                    </a>
+                                </form>
+
+                            <div class="mdl-layout-spacer"></div>
+                            <p class="card-limit-label"></p>
+                            <i class="material-icons">attach_money</i> <!--display $ at bottom right of category card-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

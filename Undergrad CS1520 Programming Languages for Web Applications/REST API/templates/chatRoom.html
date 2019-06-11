@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ CHATROOM{% endblock %}
+
+{% block head %}
+  <script>
+    var pollID
+    var poll = 1000;
+
+    function init() {
+      document.getElementById("submit").addEventListener("click", pushMessage, true); // When send is clicked, run pushMessage
+      pollID = window.setTimeout(poller, poll);
+    }
+
+    function pushMessage() {
+      var httpRequest = new XMLHttpRequest();
+
+      if (!httpRequest) {
+        alert('Error initializing XMLHTTP instance!');
+        return false;
+      }
+
+      var myMessage = document.getElementById("msg").value;
+
+      httpRequest.onreadystatechange = function() {
+        displayMessage(httpRequest, myMessage);
+      }
+
+      httpRequest.open("POST", "/new_msg");
+      httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+      var myData = "username={{ curUserName }}" + "&msg=" + myMessage + "&room=" + {{ id }};
+
+      httpRequest.send(myData);
+    }
+
+    function displayMessage(httpRequest, data) {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.status === 200) {
+          var node = document.createElement("LI");
+          var textNode = document.createTextNode("{{ curUserName }}: " + data);
+          node.appendChild(textNode);
+          document.getElementById("list").appendChild(node);
+          clearInput();
+        } else {
+          alert("Error with post request!");
+        }
+      }
+    }
+
+    function poller() {
+      var httpRequest = new XMLHttpRequest();
+
+      if (!httpRequest) {
+        alert('Error initializing XMLHTTP instance!');
+        return false;
+      }
+
+      httpRequest.onreadystatechange = function() {
+        myPoll(httpRequest);
+      }
+
+      httpRequest.open("GET", "/msgs/{{ id }}");
+      httpRequest.send();
+    }
+
+    function myPoll(httpRequest) {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.status === 200) {
+          var li = document.getElementById("list");
+          li.innerHTML = "";
+
+          var msgs = JSON.parse(httpRequest.responseText);
+
+          for (var i = 0; i < msgs.length; i++) {
+            if (msgs[i].content !== undefined) {
+              var node = document.createElement("LI");
+              var textNode = document.createTextNode(msgs[i].author + ": " + msgs[i].content);
+              node.appendChild(textNode);
+              li.appendChild(node);
+            }
+          }
+          pollID = window.setTimeout(poller, poll);
+        } else {
+          alert("Error in poll request! Try refreshing the page.");
+        }
+      }
+    }
+
+    function clearInput() {
+      document.getElementById("msg").value = "";
+    }
+
+    window.addEventListener("load", init, true);
+
+  </script>
+{% endblock %}
+
+{% block body %}
+
+  <div class="w3-panel w3-border">
+    <ul id="list">
+
+      {% for i in msgs %}
+        <li>{{ i.author }}: {{ i.contents }}
+      {% endfor %}
+
+    </ul>
+  </div>
+
+  <form name="form">
+    <input type="text" name="msg" id="msg" />
+    <input type="button" id="submit" value="Send" />
+  </form>
+
+  <p>Return to your profile <a href="{{ url_for("profile") }}">here</a></p>
+
+{% endblock %}

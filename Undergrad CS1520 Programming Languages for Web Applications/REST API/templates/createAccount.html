@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}CHAT+ CREATE ACCOUNT{% endblock %}
+
+{% block body %}
+  <div class="w3-panel w3-blue">
+    <h2>Create your own CHAT+ account!</h1>
+  </div>
+
+  {% if curUserExists == 1 %}
+    <div class="w3-panel w3-red">
+      <h4>That username is already taken.</h4>
+    </div>
+  {% endif %}
+
+  {% if curUserAdded == 1 %}
+  <div class="w3-panel w3-green">
+    <h4>Account created successfully!.</h4>
+    <p>Create another account below, or click <a href="{{ url_for("login") }}">here</a> to log in.</p>
+  </div>
+  {% endif %}
+
+  <div class="w3-panel w3-pale-blue w3-border-left w3-border-blue">
+    <h4>Please enter your credentials below.</h4>
+  </div>
+
+  <form action="" method="post">
+    Username: <input type="text" name="formUserName" /><br />
+    Password: <input type="text" name="formPass" /><br />
+    <input type="submit" value="Create Account" />
+  </form>
+
+{% endblock %}
