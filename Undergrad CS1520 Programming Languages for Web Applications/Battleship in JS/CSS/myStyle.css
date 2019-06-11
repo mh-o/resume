@@ -1,0 +1,74 @@
+body {
+    margin: 20px auto;
+    width: 70%;
+    max-width: 950px;
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typerwriter", monospace;
+	font-size: 250%;
+}
+
+p, button, input {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+	margin-bottom:1em;
+}
+
+#topHeading {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typerwriter", monospace;
+	font-size: 150%;
+}
+
+#bottomHeading {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typerwriter", monospace;
+	font-size: 150%;
+}
+
+#theGrid {
+	position:relative;
+	margin:0 auto 1em auto;
+	width:385px;
+	height:385px;
+}
+
+#theGrid div {
+	position:absolute;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #9AF7FF;
+	border: 1px solid #ddd;
+	width:35px;
+	height:35px;
+}
+
+#theGrid2 {
+	position:relative;
+	margin:0 auto 1em auto;
+	width:385px;
+	height:385px;
+}
+
+#theGrid2 div {
+	position:absolute;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #9AF7FF;
+	border: 1px solid #ddd;
+	width:35px;
+	height:35px;
+	text-align: center;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typerwriter", monospace;
+	font-size: 175%;
+}
