@@ -3,6 +3,12 @@ This repo will serve as a collection of undergraduate and personal work during m
 
 ## Web Development
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
-- Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails). All ran on a Linux VM using VirtualBox.
+- Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails).
+- All ran on a Linux VM using VirtualBox.
 
 ## Java
+
+## Linux/C
+[Binary/Counting Semaphores](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1550%20Operating%20Systems/project_2)
+- More recent work so it is a better example of my current coding style/conventions.
+- All projects in 1550 will use Linux/C but we were given the least amount of direction for this project so the code for aptsim.c was written from scratch.
