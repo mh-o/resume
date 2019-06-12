@@ -3,6 +3,6 @@ This repo will serve as a collection of undergraduate and personal work during m
 
 ## Web Development
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
-Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails). All ran on a Linux VM using VirtualBox.
+- Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails). All ran on a Linux VM using VirtualBox.
 
 ## Java
