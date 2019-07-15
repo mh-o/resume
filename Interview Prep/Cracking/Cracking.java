@@ -57,6 +57,7 @@ public class Cracking {
       title = "";
       ArrayList<String> problem = new ArrayList<String>();
       ArrayList<String> solution = new ArrayList<String>();
+      ArrayList<String> shellFile = new ArrayList<String>();
       // Setting the title for constructor.
       title = lines.get(i);
       i+=2;
@@ -68,6 +69,12 @@ public class Cracking {
       }
       i++;
 
+      while (!lines.get(i).equals("###")) {
+        shellFile.add(lines.get(i));
+        i++;
+      }
+      i+=2;
+
       // Setting the solution for constructor.
       while (!lines.get(i).isEmpty()) {
         solution.add(lines.get(i));
@@ -78,7 +85,7 @@ public class Cracking {
         }
       }
 
-      exercises.add(new Exercise(title, problem, solution));
+      exercises.add(new Exercise(title, problem, solution, shellFile));
       i++;
     }
   }

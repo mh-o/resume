@@ -1,8 +1,3 @@
-Number Swapper
-
-Write a function to swap two numbers in place (that is, without temporary
-variables).
-
 import java.util.*;
 import java.io.*;
 
@@ -33,6 +28,7 @@ public class NumberSwapper {
     new_b = arr[1];
 
     printVals(new_a, new_b);
+  }
 
   /*
    * Method to print the A and B values.
@@ -54,25 +50,5 @@ public class NumberSwapper {
     arr[1] = b;
 
     return arr;
-  }
-}
-###
-
-a = a - b;
-b = a + b;
-a = b - a;
-
-Word Frequencies
-
-Design a method to find the frequency of occurrences of any given word in a
-book. What if we were running this algorithm multiple times?
-
-int getFrequency(String[] book, String word) {
-  word = word.trim().toLowerCase();
-  int count = 0;
-  for (String w : book) {
-    if (w.trim().toLowerCase().equals(word)) {
-      count++;
-    }
   }
 }

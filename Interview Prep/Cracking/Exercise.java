@@ -2,12 +2,14 @@ import java.util.*;
 
 public class Exercise {
   String title;
-  ArrayList<String> problem, solution;
+  ArrayList<String> problem, solution, shellFile;
 
-  public Exercise(String t, ArrayList<String> p, ArrayList<String> s) {
+  public Exercise(String t, ArrayList<String> p, ArrayList<String> s,
+                  ArrayList<String> sf) {
     title = t;
     problem = p;
     solution = s;
+    shellFile = sf;
   }
 
   public String getTitle() {
@@ -36,5 +38,9 @@ public class Exercise {
 
   public ArrayList<String> getSolution() {
     return solution;
+  }
+
+  public ArrayList<String> getShellFile() {
+    return shellFile;
   }
 }
