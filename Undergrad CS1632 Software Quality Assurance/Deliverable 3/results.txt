@@ -1,0 +1,78 @@
+Below are my tests results with various thread numbers for verifier.rb. Testing
+this actually led me to find an interesting issue - my runtimes for long.txt took
+about TWICE as long when my laptop was PLUGGED IN... checked power management and
+found no slowdown occurring when plugged in. Monitored CPU speeds and saw a drop
+in GHz... so I'm assuming it's an issue at the BIOS level having to do with the
+voltage the CPU is receiving when my laptop is plugged in. Maybe I can find a fix
+later on... If anything I expected opposite results (MORE POWER = MORE SPEED!)...
+
+Testing with standard verifer.rb (single thread):
+  - 100.txt   ->  0.1958 sec      \
+  - 100.txt   ->  0.1947 sec      ->  0.1949 sec    (+/-) 0.0009  FASTEST 100.TXT
+  - 100.txt   ->  0.1941 sec      /
+    ------------------------
+  - 1000.txt  ->  2.0220 sec      \
+  - 1000.txt  ->  2.0284 sec      ->  2.0227 sec    (+/-) 0.0054  FASTEST 1000.TXT
+  - 1000.txt  ->  2.0177 sec      /
+    ------------------------
+  - long.txt  ->  21.6108 sec     \
+  - long.txt  ->  21.6907 sec     ->  21.6485 sec   (+/-) 0.0401
+  - long.txt  ->  21.6440 sec     /
+Testing with jruby verifier.rb (single thread):
+  - 100.txt   ->  0.9477 sec      \
+  - 100.txt   ->  0.9057 sec      ->  0.9220 sec    (+/-) 0.0225
+  - 100.txt   ->  0.9127 sec      /
+    ------------------------
+  - 1000.txt  ->  4.0201 sec      \
+  - 1000.txt  ->  3.8416 sec      ->  3.7887 sec    (+/-) 0.2619
+  - 1000.txt  ->  3.5044 sec      /
+    ------------------------
+  - long.txt  ->  26.6977 sec     \
+  - long.txt  ->  27.0256 sec     ->  26.7957 sec   (+/-) 0.1999
+  - long.txt  ->  26.6637 sec     /
+Testing with jruby verifier.rb (two threads):
+  - 100.txt   ->  0.5364 sec      \
+  - 100.txt   ->  0.8407 sec      ->  0.7220 sec    (+/-) 0.1628
+  - 100.txt   ->  0.7888 sec      /
+    ------------------------
+  - 1000.txt  ->  3.2074 sec      \
+  - 1000.txt  ->  3.1590 sec      ->  3.1763 sec    (+/-) 0.0270
+  - 1000.txt  ->  3.1624 sec      /
+    ------------------------
+  - long.txt  ->  16.9435 sec     \
+  - long.txt  ->  16.8597 sec     ->  16.9117 sec   (+/-) 0.0454
+  - long.txt  ->  16.9318 sec     /
+Testing with jruby verifier.rb (three threads):
+  - 100.txt   ->  0.5088 sec      \
+  - 100.txt   ->  0.5814 sec      ->  0.9220 sec    (+/-) 0.0225
+  - 100.txt   ->  0.6006 sec      /
+    ------------------------
+  - 1000.txt  ->  3.2127 sec      \
+  - 1000.txt  ->  2.5820 sec      ->  3.7887 sec    (+/-) 0.2619
+  - 1000.txt  ->  3.1008 sec      /
+    ------------------------
+  - long.txt  ->  14.1450 sec     \
+  - long.txt  ->  14.1338 sec     ->  14.0509 sec   (+/-) 0.1533
+  - long.txt  ->  13.8740 sec     /
+
+After this I got tired of testing every file - and figured differences for the
+smaller files would be negligible. So I went right for long.txt.
+
+Testing with jruby verifier.rb (four threads):
+  - long.txt  ->  11.0732 sec     \
+  - long.txt  ->  12.7760 sec     ->  12.0847 sec   (+/-) 0.8954
+  - long.txt  ->  12.4050 sec     /
+Testing with jruby verifier.rb (eight threads):
+  - long.txt  ->  10.9516 sec     \
+  - long.txt  ->  10.9997 sec     ->  10.9730 sec   (+/-) 0.0245  FASTEST LONG.TXT
+  - long.txt  ->  10.9677 sec     /
+
+Just to make sure I wasn't wasting my time with JRuby, I ran the fastest (8-thread)
+version of the program in Ruby. Runtimes shot back up to the ~23 second mark. So
+yes, JRuby is indeed doing its job to bypass the global interpreter lock.
+
+Any more than 8 threads causes a slowdown. This is because - I believe - that Intel
+processors have hyper-threading. So the OS addresses two virtual cores for each
+physical core. In my case - 4 physical cores corresponds to 8 virtual cores. So
+> 8 threads means the OS has to step in and schedule the threads. More context
+switches at the system level means slower runtime!

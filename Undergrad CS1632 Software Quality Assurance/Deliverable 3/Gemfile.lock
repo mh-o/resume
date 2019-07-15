@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    flamegraph (0.9.5)
+    minitest (5.11.3)
+    stackprof (0.2.11)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  flamegraph
+  minitest
+  stackprof
+
+BUNDLED WITH
+   1.16.1
