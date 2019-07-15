@@ -8,7 +8,7 @@ All of these projects are contained in the folders above - I just wanted to make
 - This was intended to be an agile group project that spanned the entire semester - however I ended up writing 99% of the code myself.
 #### Software Design Methodology (Pitt):
 [Java based Voting Application](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1631%20Software%20Design%20Methodology/Components/TempBloodPressure/CreateTempBloodPressure.java)
-- The file linked above is a good example of one that I wrote a majority of - this was a large project and so many of the files were shelled out for us or provided. However, for the full project and build scripts, click [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1631%20Software%20Design%20Methodology)
+- The file linked above is a good example of one that I wrote a majority of - this was a large project and so many of the files were shelled out for us or provided. However, for the full project and build scripts, click [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1631%20Software%20Design%20Methodology).
 - This is probably my best example of manipulation a real-world existing Java application.
 #### Google's Coding Competition
 In my spare time I attempt coding challenges from past Google competitions, to practice my knowledge of algorithms and keep myself well-versed in Java. For a quick example of some code, click [here](https://github.com/mh-o/resume/blob/master/Google's%20Kick%20Start%202013/Round%20A/Problem%20B/RationalNumberTree.java), or see any of the 'Google's Kick Start' folders above.
