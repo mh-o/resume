@@ -8,7 +8,8 @@ This repo will serve as a collection of undergraduate and personal work during m
 
 ## Java
 [Texas Holdem in Java/Swing](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1530%20Software%20Engineering/src/main/java/TexasHoldem.java)
-- This file gives a good overview of the main program and some of the coding style used, but the entire project directory including tests and build scripts can be viewed [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1530%20Software%20Engineering) while all of the core java files can be found [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1530%20Software%20Engineering/src/main/java)
+- The file linked above gives a good overview of the main program and some of the coding style used, but the entire project directory including tests and build scripts can be viewed [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1530%20Software%20Engineering) while all of the core java files can be found [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1530%20Software%20Engineering/src/main/java).
+- This was intended to be an agile group project that spanned the entire semester - however I ended up writing 99% of the code myself.
 
 
 ## Linux/C
