@@ -1,5 +1,5 @@
 # RESUME
-This repo will serve as a collection of undergraduate and personal work during my time in software development. It will also serve of an index of projects that best exemplify different areas of development.
+All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below
 
 ## Java
 #### Software Engineering (Pitt):
