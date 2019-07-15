@@ -10,7 +10,7 @@ This repo will serve as a collection of undergraduate and personal work during m
 ## SQL
 Naturally, this section will overlap with others as I've used SQL in databases for certain projects.
 #### Programming Languages for Web Applications (Pitt):
-[Chat Room](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Chatroom/chat.py)
+[Chat Room](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Chatroom/chat.py) | 
 [Event Planner](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Event%20Planner/catering.py)
 - These are just the main python files for each respective application which contains the connection to the SQL database via SQLite, along with other SQL applications.
 
