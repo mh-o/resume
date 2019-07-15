@@ -1,0 +1,23 @@
+Number Swapper
+
+Write a function to swap two numbers in place (that is, without temporary
+variables).
+
+a = a - b;
+b = a + b;
+a = b - a;
+
+Word Frequencies
+
+Design a method to find the frequency of occurrences of any given word in a
+book. What if we were running this algorithm multiple times?
+
+int getFrequency(String[] book, String word) {
+  word = word.trim().toLowerCase();
+  int count = 0;
+  for (String w : book) {
+    if (w.trim().toLowerCase().equals(word)) {
+      count++;
+    }
+  }
+}
