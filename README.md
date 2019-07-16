@@ -20,6 +20,7 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 
 ## SQL
 ![sql][sql_logo]
+
 Naturally, this section will overlap with others as I've used SQL in databases for certain projects.
 #### Programming Languages for Web Applications (Pitt):
 [Chat Room](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Chatroom/chat.py) | 
