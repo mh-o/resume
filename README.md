@@ -41,4 +41,4 @@ Naturally, this section will overlap with others as I've used SQL in databases f
 - More recent work so it is a better example of my current coding style/conventions.
 - All projects in 1550 will use Linux/C but we were given the least amount of direction for this project so the code for aptsim.c was written from scratch.
 
-[java_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/java_logo.png =100x20
+[java_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/java_logo.png=100x20
