@@ -31,6 +31,7 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 
 ## Web Development
 ![rails][rails_logo]
+#### Full Stack/UI (Capstone)
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
 - Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails).
 - All ran on a Linux VM using VirtualBox.
