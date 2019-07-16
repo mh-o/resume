@@ -27,7 +27,7 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 #### Database Management Systems (Pitt):
 [Messenger Application in Java/JDBC/SQL](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project/transactions_messenger.sql)
 - Linked above is one of the main SQL files, but others are available in the repo [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
-- Overlaps with Java, worked witha partner for this project.
+- Overlaps with Java, worked with a partner on this project.
 ***
 ## Web Development
 ![rails][rails_logo]
