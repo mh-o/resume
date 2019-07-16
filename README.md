@@ -40,7 +40,7 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 ![ruby][ruby_logo]
 #### Software Quality Assurance (Pitt):
 [Multithreaded Hash Checker in JRuby](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1632%20Software%20Quality%20Assurance/Deliverable%203/hash_checker.rb)
-- All the projects for this class were in Ruby - which I thoroughly enjoed. The rest of the projects can be found [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1632%20Software%20Quality%20Assurance).
+- All the projects for this class were in Ruby - which I thoroughly enjoyed. The rest of the projects can be found [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1632%20Software%20Quality%20Assurance).
 - This was a project in which I essentially went above and beyond to implement multi-threading in JRuby, so I have some knowledge of threading in Java as a result. This was before I took operating systems so my understanding has improved since this project.
 ***
 ## Linux/C
