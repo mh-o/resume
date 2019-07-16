@@ -33,6 +33,7 @@ public class NumberSwapper {
     new_b = arr[1];
 
     printVals(new_a, new_b);
+  }
 
   /*
    * Method to print the A and B values.
@@ -66,6 +67,9 @@ Word Frequencies
 
 Design a method to find the frequency of occurrences of any given word in a
 book. What if we were running this algorithm multiple times?
+
+another program
+###
 
 int getFrequency(String[] book, String word) {
   word = word.trim().toLowerCase();

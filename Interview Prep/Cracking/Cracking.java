@@ -1,5 +1,7 @@
 import java.util.*;
 import java.io.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
 
 public class Cracking {
   static ArrayList<Exercise> exercises;
@@ -37,13 +39,35 @@ public class Cracking {
     String title = ex.getTitle();
     ArrayList<String> problem = ex.getProblem();
     ArrayList<String> solution = ex.getSolution();
+    ArrayList<String> shellFile = ex.getShellFile();
 
     System.out.println(title);
     System.out.println(listToString(problem));
+    createShell(ex.getName(), shellFile);
+
 
     System.out.println("Press ENTER to view the solution...");
     in.nextLine();
     System.out.println(listToString(solution));
+  }
+
+  /*
+   * Method to create a shellFile.java for the specific problem that was
+   * generated.
+   */
+  public static void createShell(String title, ArrayList<String> shellFile) {
+    String path = title.replaceAll(" ", "");
+    path += ".java";
+
+    try {
+      Path file = Paths.get(path);
+      Files.write(file, shellFile, StandardCharsets.UTF_8);
+    } catch (IOException e) {
+      System.out.println("Unable to create shell file '" + path + "'");
+    }
+
+
+    System.out.println("Created shell file in pwd '" + path + "'");
   }
 
   /*

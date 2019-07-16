@@ -32,6 +32,10 @@ public class Exercise {
     return temp;
   }
 
+  public String getName() {
+    return title;
+  }
+
   public ArrayList<String> getProblem() {
     return problem;
   }
