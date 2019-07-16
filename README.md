@@ -1,5 +1,5 @@
 # RESUME
-All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below
+All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below.
 ***
 ## Java
 ![java][java_logo]
