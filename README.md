@@ -10,6 +10,10 @@ All of these projects are contained in the folders above - I just wanted to make
 [Java based Voting Application](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1631%20Software%20Design%20Methodology/Components/TempBloodPressure/CreateTempBloodPressure.java)
 - The file linked above is a good example of one that I wrote a majority of - this was a large project and so many of the files were shelled out for us or provided. However, for the full project and build scripts, click [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1631%20Software%20Design%20Methodology).
 - This is probably my best example of manipulation a real-world existing Java application.
+#### Database Management Systems (Pitt):
+[Messenger Application in Java/JDBC/SQL](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project/Messenger.java)
+- File linked above is the main Java file, but the entire repo is [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
+- Overlaps with SQL, worked with a partner for this project.
 #### Google's Coding Competition
 In my spare time I attempt coding challenges from past Google competitions, to practice my knowledge of algorithms and keep myself well-versed in Java. For a quick example of some code, click [here](https://github.com/mh-o/resume/blob/master/Google's%20Kick%20Start%202013/Round%20A/Problem%20B/RationalNumberTree.java), or see any of the 'Google's Kick Start' folders above.
 
@@ -20,6 +24,10 @@ Naturally, this section will overlap with others as I've used SQL in databases f
 [Chat Room](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Chatroom/chat.py) | 
 [Event Planner](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Event%20Planner/catering.py)
 - These are just the main python files for each respective application which contains the connection to the SQL database via SQLite, along with other SQL applications.
+#### Database Management Systems (Pitt):
+[Messenger Application in Java/JDBC/SQL](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project/transactions_messenger.sql)
+- Linked above is one of the main SQL files, but others are available in the repo [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
+- Overlaps with Java, worked witha partner for this project.
 
 ## Web Development
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
