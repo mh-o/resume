@@ -17,7 +17,7 @@ All of these projects are contained in the folders above - I just wanted to make
 - Overlaps with SQL, worked with a partner for this project.
 #### Google's Coding Competition
 In my spare time I attempt coding challenges from past Google competitions, to practice my knowledge of algorithms and keep myself well-versed in Java. For a quick example of some code, click [here](https://github.com/mh-o/resume/blob/master/Google's%20Kick%20Start%202013/Round%20A/Problem%20B/RationalNumberTree.java), or see any of the 'Google's Kick Start' folders above.
-
+***
 ## SQL (Naturally, this section overlaps with others)
 ![sql][sql_logo]
 #### Programming Languages for Web Applications (Pitt):
@@ -28,14 +28,14 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 [Messenger Application in Java/JDBC/SQL](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project/transactions_messenger.sql)
 - Linked above is one of the main SQL files, but others are available in the repo [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
 - Overlaps with Java, worked witha partner for this project.
-
+***
 ## Web Development
 ![rails][rails_logo]
 #### Full Stack/UI (Capstone)
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
 - Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails).
 - All ran on a Linux VM using VirtualBox.
-
+***
 ## Linux/C
 ![linux][linux_logo]
 #### Operating Systems (Pitt):
