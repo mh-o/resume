@@ -30,11 +30,13 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 - Overlaps with Java, worked witha partner for this project.
 
 ## Web Development
+![rails][rails_logo]
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
 - Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails).
 - All ran on a Linux VM using VirtualBox.
 
 ## Linux/C
+![linux][linux_logo]
 #### Operating Systems (Pitt):
 [Binary/Counting Semaphores](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1550%20Operating%20Systems/project_2)
 - More recent work so it is a better example of my current coding style/conventions.
@@ -42,3 +44,5 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 
 [java_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/java_logo.png
 [sql_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/sql_logo.jpg
+[rails_log]: https://github.com/mh-o/resume/blob/master/README%20Images/rails_logo.png
+[linux_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/linux_logo.png
