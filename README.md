@@ -1,6 +1,7 @@
 # RESUME
 All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below
 
+![java][java_logo]
 ## Java
 #### Software Engineering (Pitt):
 [Texas Holdem in Java/Swing](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1530%20Software%20Engineering/src/main/java/TexasHoldem.java)
@@ -39,3 +40,5 @@ Naturally, this section will overlap with others as I've used SQL in databases f
 [Binary/Counting Semaphores](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1550%20Operating%20Systems/project_2)
 - More recent work so it is a better example of my current coding style/conventions.
 - All projects in 1550 will use Linux/C but we were given the least amount of direction for this project so the code for aptsim.c was written from scratch.
+
+[java_logo]: https://github.com/
