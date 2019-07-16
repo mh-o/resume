@@ -1,7 +1,7 @@
 # RESUME
 All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below
 
-<p style="text-align: center;"> ## Java <\p>
+## Java
 ![java][java_logo]
 #### Software Engineering (Pitt):
 [Texas Holdem in Java/Swing](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1530%20Software%20Engineering/src/main/java/TexasHoldem.java)
