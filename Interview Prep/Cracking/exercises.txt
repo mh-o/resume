@@ -68,7 +68,27 @@ Word Frequencies
 Design a method to find the frequency of occurrences of any given word in a
 book. What if we were running this algorithm multiple times?
 
-another program
+import java.util.*;
+import java.io.*;
+
+public class WordFrequencies {
+  static Scanner in;
+
+  /*
+   * Main program.
+   */
+  public static void main(String args[]) {
+    in = new Scanner(new BufferedReader(new InputStreamReader(System.in)));
+
+    String[] book = {"cat", "dog", "cat", "mouse", "dog", "cat"};
+    System.out.print("Enter a word to search: ");
+
+    String word = in.nextLine();
+    System.out.println("Frequency: " + getFrequency(book, word));
+  }
+
+  // YOUR SOLUTION GOES HERE
+}
 ###
 
 int getFrequency(String[] book, String word) {
