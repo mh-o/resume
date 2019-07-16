@@ -53,4 +53,5 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 [java_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/java_logo.png
 [sql_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/sql_logo.jpg
 [rails_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/rails_logo.png
+[ruby_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/ruby_logo.png
 [linux_logo]: https://github.com/mh-o/resume/blob/master/README%20Images/linux_logo.png
