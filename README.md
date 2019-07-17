@@ -1,5 +1,5 @@
 # RESUME
-## JUMP TO: [Java](#a_java) [SQL](#a_sql) [Web/Full Stack Dev](#_web) [Ruby](#_ruby) [Linux/C](#a_linux)
+## JUMP TO: [Java](#a_java) [SQL](#a_sql) [Web/Full Stack Dev](#a_web) [Ruby](#a_ruby) [Linux/C](#a_linux)
 All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below.
 ***
 ## <a name="a_java"></a>Java
