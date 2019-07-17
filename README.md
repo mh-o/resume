@@ -1,5 +1,5 @@
 # RESUME
-## JUMP TO: [Java](#a_java)
+## JUMP TO: [Java](#a_java) [SQL](#a_sql) [Web/Full Stack Dev](#_web) [Ruby](#_ruby) [Linux/C](#a_linux)
 All of these projects are contained in the folders above - I just wanted to make it easier to sift through. Some, but not all of my work has been sorted by the languages/tools/frameworks highlighted below.
 ***
 ## <a name="a_java"></a>Java
@@ -19,7 +19,7 @@ All of these projects are contained in the folders above - I just wanted to make
 #### Google's Coding Competition
 In my spare time I attempt coding challenges from past Google competitions, to practice my knowledge of algorithms and keep myself well-versed in Java. For a quick example of some code, click [here](https://github.com/mh-o/resume/blob/master/Google's%20Kick%20Start%202013/Round%20A/Problem%20B/RationalNumberTree.java), or see any of the 'Google's Kick Start' folders above.
 ***
-## SQL (Naturally, this section overlaps with others)
+## <a name="a_sql"></a>SQL (Naturally, this section overlaps with others)
 ![sql][sql_logo]
 #### Programming Languages for Web Applications (Pitt):
 [Chat Room](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1520%20Programming%20Languages%20for%20Web%20Applications/Chatroom/chat.py) | 
@@ -30,7 +30,7 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 - Linked above is one of the main SQL files, but others are available in the repo [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
 - Overlaps with Java, worked with a partner on this project.
 ***
-## Web/Full Stack Development
+## <a name="a_web"></a>Web/Full Stack Development
 ![rails][rails_logo]
 #### Full Stack/UI (Capstone)
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
@@ -44,14 +44,14 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 - Worked to automate testing and add suport for various dependenies for ryptocurrencies using Docker.
 - Worked with a professor and team of students on this project (not for credit).
 ***
-## Ruby
+## <a name="a_ruby"></a>Ruby
 ![ruby][ruby_logo]
 #### Software Quality Assurance (Pitt):
 [Multithreaded Hash Checker in JRuby](https://github.com/mh-o/resume/blob/master/Undergrad%20CS1632%20Software%20Quality%20Assurance/Deliverable%203/hash_checker.rb)
 - All the projects for this class were in Ruby - which I thoroughly enjoyed. The rest of the projects can be found [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1632%20Software%20Quality%20Assurance).
 - This was a project in which I essentially went above and beyond to implement multi-threading in JRuby, so I have some knowledge of threading in Java as a result. This was before I took operating systems so my understanding has improved since this project.
 ***
-## Linux/C
+## <a name="a_linux"></a>Linux/C
 ![linux][linux_logo]
 #### Operating Systems (Pitt):
 [Binary/Counting Semaphores](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1550%20Operating%20Systems/project_2)
