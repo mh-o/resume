@@ -29,12 +29,19 @@ In my spare time I attempt coding challenges from past Google competitions, to p
 - Linked above is one of the main SQL files, but others are available in the repo [here](https://github.com/mh-o/resume/tree/master/Undergrad%20CS1555%20Database%20Management%20Systems/Term%20Project).
 - Overlaps with Java, worked with a partner on this project.
 ***
-## Web Development
+## Web/Full Stack Development
 ![rails][rails_logo]
 #### Full Stack/UI (Capstone)
 [OCCAM](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20OCCAM)
+- Live site is [here](https://occam.cs.pitt.edu/).
 - Developed UI mainly using Ruby, HAML, SCSS, and JSON but also needed knowledge of the full stack which included a Python backend, Puma daemon, Sinatra server (similar to Ruby on Rails).
 - All ran on a Linux VM using VirtualBox.
+#### Backend with Bash/Python/Docker (Side Project)
+[QUACC](https://github.com/mh-o/resume/blob/master/Undergrad%20Project%20QUACC/bitcoin/bitcoin.sh)
+- Live site is [here](https://quacc.org/).
+- Full repo is [here](https://github.com/mh-o/resume/tree/master/Undergrad%20Project%20QUACC).
+- Worked to automate testing and add suport for various dependenies for ryptocurrencies using Docker.
+- Worked with a professor and team of students on this project (not for credit).
 ***
 ## Ruby
 ![ruby][ruby_logo]
